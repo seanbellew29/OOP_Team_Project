@@ -1,0 +1,64 @@
+Name: sean
+Yes
+Yes
+Yes
+No
+No
+
+Name: ryan
+No
+No
+No
+No
+No
+
+Name: bob
+No
+No
+No
+No
+No
+
+Name: JimBob
+Yes
+Yes
+No
+Yes
+Yes
+
+Name: bobby
+No
+Yes
+Yes
+Yes
+Yes
+Name: jj
+No
+No
+No
+Yes
+No
+Name: gg
+No
+No
+No
+Yes
+No
+Name: tt
+No
+No
+No
+No
+No
+Name: Ronald
+Yes
+No
+No
+No
+No
+Name: jj
+No
+No
+No
+No
+No

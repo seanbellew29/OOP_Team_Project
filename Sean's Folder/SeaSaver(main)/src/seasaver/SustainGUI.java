@@ -5,6 +5,11 @@
 package seasaver;
 import HomePage.SeaSaverHomeGUI;
 import Frame2.ProjectGUI;
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.IOException;
 import java.util.ArrayList;
 import javax.swing.ImageIcon;
 import javax.swing.JOptionPane;
@@ -604,12 +609,32 @@ public class SustainGUI extends javax.swing.JFrame {
         // TODO add your handling code here:
         if(scoreList.isEmpty()){
             JOptionPane.showMessageDialog(null, "No previous answers saved");
+            return;
         }else{
-            for(int i = 0 ; i < scoreList.size(); i++){
-                ScoreRecord record = scoreList.get(i);
-            JOptionPane.showMessageDialog(null, "name"  + nameTF.getName() + "\n " + "Previous Answers:" + "\n" + "Q1: " + result.get(0) + "\n" +
-            "Q2: " + result.get(1) + "\n" + "Q3: " + result.get(2) + "\n" + "Q4: " + result.get(3) + "\n" +
-            "Q5: " + result.get(4));
+             StringBuffer allRecords = new StringBuffer();
+          for (ScoreRecord record : scoreList) {
+             allRecords.append("Name: ").append(record.getName()).append("\n");
+                     ArrayList<String> answers = record.getAnswers();
+          for (int i = 0; i < answers.size(); i++) {
+              allRecords.append("Q").append(i + 1).append(": ").append(answers.get(i)).append("\n");
+            }
+                 allRecords.append("\n");
+            }
+
+        JOptionPane.showMessageDialog(null, allRecords.toString());
+//            for(int i = 0 ; i < scoreList.size(); i++){
+//                ScoreRecord record = scoreList.get(i);
+//            JOptionPane.showMessageDialog(null, "name"  + nameTF.getName() + "\n " + "Previous Answers:" + "\n" + "Q1: " + result.get(0) + "\n" +
+//            "Q2: " + result.get(1) + "\n" + "Q3: " + result.get(2) + "\n" + "Q4: " + result.get(3) + "\n" +
+//            "Q5: " + result.get(4));
+//            }
+             try (BufferedReader reader = new BufferedReader(new FileReader("output.txt"))) {
+                 String line;
+             while ((line = reader.readLine()) != null) {
+                  System.out.println(line); 
+             }
+             } catch (IOException e) {
+                    System.out.println("An error occured " + e);
             }
         }
     }//GEN-LAST:event_displayBTNActionPerformed
@@ -686,7 +711,22 @@ public class SustainGUI extends javax.swing.JFrame {
     }
     
     
+    try (BufferedWriter writer = new BufferedWriter(new FileWriter("output.txt", true))) {
+        writer.write("Name: " + name);
+        writer.newLine();
+
+    for (String ans : result) {
+        writer.write(ans);
+        writer.newLine();
+    }
+         writer.close();
+
+    } catch (IOException e) {
+        System.out.println("An error occurred" + e);
+    }
     
+    
+   
     
         
         
