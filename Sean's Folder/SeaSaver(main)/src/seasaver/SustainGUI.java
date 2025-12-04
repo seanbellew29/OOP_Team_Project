@@ -22,14 +22,14 @@ public class SustainGUI extends javax.swing.JFrame {
     
     
     private static final java.util.logging.Logger logger = java.util.logging.Logger.getLogger(SustainGUI.class.getName());
-       Calculations calc = new Calculations();
-       ArrayList<String> result;
-       ArrayList<ScoreRecord> scoreList;
+       Calculations calc = new Calculations(); //Creating and declaring the class Calculations
+       ArrayList<String> result;    //Declaring ArrayList result
+       ArrayList<ScoreRecord> scoreList;    //Decalring arraylist scorelist
     /**
      */
-    public SustainGUI() {
+    public SustainGUI() {   //Constructor
         initComponents();
-        result = new ArrayList<>();
+        result = new ArrayList<>(); 
         scoreList = new ArrayList<>();
         imgLBL.setVisible(false);
     }
@@ -622,12 +622,12 @@ public class SustainGUI extends javax.swing.JFrame {
             }
 
         JOptionPane.showMessageDialog(null, allRecords.toString());
-//            for(int i = 0 ; i < scoreList.size(); i++){
-//                ScoreRecord record = scoreList.get(i);
-//            JOptionPane.showMessageDialog(null, "name"  + nameTF.getName() + "\n " + "Previous Answers:" + "\n" + "Q1: " + result.get(0) + "\n" +
-//            "Q2: " + result.get(1) + "\n" + "Q3: " + result.get(2) + "\n" + "Q4: " + result.get(3) + "\n" +
-//            "Q5: " + result.get(4));
-//            }
+            for(int i = 0 ; i < scoreList.size(); i++){
+                ScoreRecord record = scoreList.get(i);
+            JOptionPane.showMessageDialog(null, "name"  + nameTF.getName() + "\n " + "Previous Answers:" + "\n" + "Q1: " + result.get(0) + "\n" +
+            "Q2: " + result.get(1) + "\n" + "Q3: " + result.get(2) + "\n" + "Q4: " + result.get(3) + "\n" +
+            "Q5: " + result.get(4));
+            }
              try (BufferedReader reader = new BufferedReader(new FileReader("output.txt"))) {
                  String line;
              while ((line = reader.readLine()) != null) {
@@ -655,6 +655,10 @@ public class SustainGUI extends javax.swing.JFrame {
     private void submitBTNActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_submitBTNActionPerformed
         // TODO add your handling code here:
         String name = nameTF.getText();
+        if(name.isEmpty()){
+            JOptionPane.showMessageDialog(null, "Error, please enter your name");
+            return;
+        }
         scoreList.add(new ScoreRecord(name, new ArrayList<>(result)));
         
          result.clear();
