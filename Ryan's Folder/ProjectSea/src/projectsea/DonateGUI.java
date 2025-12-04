@@ -17,12 +17,16 @@ import javax.swing.JOptionPane;
 public class DonateGUI extends javax.swing.JFrame {
     
     private static final java.util.logging.Logger logger = java.util.logging.Logger.getLogger(DonateGUI.class.getName());
+    //tracks total money raised
     private double totalRaised = 0.0;
+    //stores the most recent donation amount(so i can later delete)
     private double lastAmount;
+    //stores user input
     private double amount;
     private String reason;
-    private final ArrayList<Double> donationAmounts = new ArrayList<>();
-    private final ArrayList<String> donationReasons = new ArrayList<>();
+    //stores the donations
+    private final ArrayList<Double> donationAmounts;
+    private final ArrayList<String> donationReasons;
     
     
 
@@ -33,6 +37,10 @@ public class DonateGUI extends javax.swing.JFrame {
      */
     public DonateGUI() {
         initComponents();
+        //initialize lists that stores the amountts and  reasons
+        donationAmounts = new ArrayList<>();
+        donationReasons = new ArrayList<>();
+        
     }
     
 
@@ -295,22 +303,26 @@ public class DonateGUI extends javax.swing.JFrame {
     private void donateBTNActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_donateBTNActionPerformed
         // TODO add your handling code here:                                          
         try {
+            //convert the amount text to a nunber
             amount = Double.parseDouble(amountTF.getText());
             reason = reasonTF.getText();
-
+            
+            //validates the reason
             if (reason.isEmpty()) {
                 JOptionPane.showMessageDialog(null, "Please enter a reason.");
                 return;
             }
 
-             // Store donation in lists
+             // Store new donation in memory
             donationAmounts.add(amount);
             donationReasons.add(reason);
-
+            
+            //update total amount
             totalRaised += amount;
+            //shows donation in the text area
             amountTA.append("€" + amount + " - " + reason + "\n");
 
-            // Clear text fields
+            // Clears users input after donation in made
             amountTF.setText("");
             reasonTF.setText("");
             JOptionPane.showMessageDialog(null, "Donation added, thank you so much !");
@@ -319,7 +331,7 @@ public class DonateGUI extends javax.swing.JFrame {
             JOptionPane.showMessageDialog(null, "Please enter a valid number.");
         }
         
-        
+        //saves donation to file
         try (BufferedWriter donate = new BufferedWriter(new FileWriter("donations.txt", true))) {
 
         donate.write("Donation Amount: " + amount);
@@ -364,6 +376,7 @@ public class DonateGUI extends javax.swing.JFrame {
         }
 
         JOptionPane.showMessageDialog(null, "Last donation removed!");
+        
     }//GEN-LAST:event_deleteBTNActionPerformed
 
     /**
