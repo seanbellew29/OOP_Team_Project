@@ -23,18 +23,18 @@
   <Layout>
     <DimensionLayout dim="0">
       <Group type="103" groupAlignment="0" attributes="0">
-          <Component id="jPanel1" max="32767" attributes="0"/>
+          <Component id="titlePNL" max="32767" attributes="0"/>
           <Group type="102" attributes="0">
               <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" attributes="0">
                       <EmptySpace min="-2" pref="6" max="-2" attributes="0"/>
-                      <Component id="jLabel2" min="-2" pref="537" max="-2" attributes="0"/>
+                      <Component id="turtleIMG" min="-2" pref="537" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
-                      <Component id="jPanel3" max="32767" attributes="0"/>
+                      <Component id="factsPNL" max="32767" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
                   </Group>
-                  <Component id="jPanel2" max="32767" attributes="0"/>
+                  <Component id="gobackPNL" max="32767" attributes="0"/>
               </Group>
           </Group>
       </Group>
@@ -43,13 +43,13 @@
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" alignment="0" attributes="0">
               <EmptySpace max="-2" attributes="0"/>
-              <Component id="jPanel1" min="-2" max="-2" attributes="0"/>
+              <Component id="titlePNL" min="-2" max="-2" attributes="0"/>
               <EmptySpace max="-2" attributes="0"/>
-              <Component id="jPanel2" min="-2" max="-2" attributes="0"/>
+              <Component id="gobackPNL" min="-2" max="-2" attributes="0"/>
               <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Component id="jLabel2" min="-2" max="-2" attributes="0"/>
-                  <Component id="jPanel3" min="-2" max="-2" attributes="0"/>
+                  <Component id="turtleIMG" min="-2" max="-2" attributes="0"/>
+                  <Component id="factsPNL" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace min="0" pref="6" max="32767" attributes="0"/>
           </Group>
@@ -57,7 +57,7 @@
     </DimensionLayout>
   </Layout>
   <SubComponents>
-    <Container class="javax.swing.JPanel" name="jPanel1">
+    <Container class="javax.swing.JPanel" name="titlePNL">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="99" green="99" red="99" type="rgb"/>
@@ -74,7 +74,7 @@
           <Group type="103" groupAlignment="0" attributes="0">
               <Group type="102" alignment="1" attributes="0">
                   <EmptySpace max="32767" attributes="0"/>
-                  <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
+                  <Component id="titleLBL" min="-2" max="-2" attributes="0"/>
                   <EmptySpace min="-2" pref="243" max="-2" attributes="0"/>
               </Group>
           </Group>
@@ -83,14 +83,14 @@
           <Group type="103" groupAlignment="0" attributes="0">
               <Group type="102" alignment="1" attributes="0">
                   <EmptySpace pref="33" max="32767" attributes="0"/>
-                  <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
+                  <Component id="titleLBL" min="-2" max="-2" attributes="0"/>
                   <EmptySpace min="-2" pref="28" max="-2" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
       </Layout>
       <SubComponents>
-        <Component class="javax.swing.JLabel" name="jLabel1">
+        <Component class="javax.swing.JLabel" name="titleLBL">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Stencil" size="48" style="1"/>
@@ -108,7 +108,7 @@
         </Component>
       </SubComponents>
     </Container>
-    <Component class="javax.swing.JLabel" name="jLabel2">
+    <Component class="javax.swing.JLabel" name="turtleIMG">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
           <Image iconType="2" name="C:\Users\ryanl\OneDrive\Pictures\Screenshots\turtle rubish.png"/>
@@ -116,7 +116,7 @@
         <Property name="text" type="java.lang.String" value="jLabel2"/>
       </Properties>
     </Component>
-    <Container class="javax.swing.JPanel" name="jPanel2">
+    <Container class="javax.swing.JPanel" name="gobackPNL">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="cc" green="33" red="0" type="rgb"/>
@@ -128,7 +128,7 @@
           <Group type="103" groupAlignment="0" attributes="0">
               <Group type="102" alignment="0" attributes="0">
                   <EmptySpace min="-2" pref="380" max="-2" attributes="0"/>
-                  <Component id="jButton1" min="-2" max="-2" attributes="0"/>
+                  <Component id="gobackBTN" min="-2" max="-2" attributes="0"/>
                   <EmptySpace max="32767" attributes="0"/>
               </Group>
           </Group>
@@ -137,14 +137,14 @@
           <Group type="103" groupAlignment="0" attributes="0">
               <Group type="102" alignment="0" attributes="0">
                   <EmptySpace min="-2" pref="19" max="-2" attributes="0"/>
-                  <Component id="jButton1" min="-2" pref="31" max="-2" attributes="0"/>
+                  <Component id="gobackBTN" min="-2" pref="31" max="-2" attributes="0"/>
                   <EmptySpace pref="15" max="32767" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
       </Layout>
       <SubComponents>
-        <Component class="javax.swing.JButton" name="jButton1">
+        <Component class="javax.swing.JButton" name="gobackBTN">
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="cc" green="cc" red="cc" type="rgb"/>
@@ -160,12 +160,12 @@
             </Property>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton1ActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="gobackBTNActionPerformed"/>
           </Events>
         </Component>
       </SubComponents>
     </Container>
-    <Container class="javax.swing.JPanel" name="jPanel3">
+    <Container class="javax.swing.JPanel" name="factsPNL">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="cc" green="33" red="0" type="rgb"/>

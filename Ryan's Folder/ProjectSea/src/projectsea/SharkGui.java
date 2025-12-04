@@ -28,46 +28,46 @@ public class SharkGui extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jLabel1 = new javax.swing.JLabel();
-        jPanel1 = new javax.swing.JPanel();
-        jLabel2 = new javax.swing.JLabel();
-        jPanel2 = new javax.swing.JPanel();
+        sharkIMG = new javax.swing.JLabel();
+        titlePNL = new javax.swing.JPanel();
+        titleLBL = new javax.swing.JLabel();
+        gobackPNL = new javax.swing.JPanel();
         jButton1 = new javax.swing.JButton();
-        jPanel3 = new javax.swing.JPanel();
+        factsPNL = new javax.swing.JPanel();
         jScrollPane1 = new javax.swing.JScrollPane();
         jTextArea1 = new javax.swing.JTextArea();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jLabel1.setIcon(new javax.swing.ImageIcon("C:\\Users\\ryanl\\OneDrive\\Pictures\\Screenshots\\shark.png")); // NOI18N
-        jLabel1.setText("jLabel1");
+        sharkIMG.setIcon(new javax.swing.ImageIcon("C:\\Users\\ryanl\\OneDrive\\Pictures\\Screenshots\\shark.png")); // NOI18N
+        sharkIMG.setText("jLabel1");
 
-        jPanel1.setBackground(new java.awt.Color(153, 153, 153));
-        jPanel1.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        titlePNL.setBackground(new java.awt.Color(153, 153, 153));
+        titlePNL.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
 
-        jLabel2.setFont(new java.awt.Font("Stencil", 1, 48)); // NOI18N
-        jLabel2.setForeground(new java.awt.Color(0, 51, 204));
-        jLabel2.setText("SHARK FACTS");
-        jLabel2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        titleLBL.setFont(new java.awt.Font("Stencil", 1, 48)); // NOI18N
+        titleLBL.setForeground(new java.awt.Color(0, 51, 204));
+        titleLBL.setText("SHARK FACTS");
+        titleLBL.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
 
-        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
-        jPanel1.setLayout(jPanel1Layout);
-        jPanel1Layout.setHorizontalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+        javax.swing.GroupLayout titlePNLLayout = new javax.swing.GroupLayout(titlePNL);
+        titlePNL.setLayout(titlePNLLayout);
+        titlePNLLayout.setHorizontalGroup(
+            titlePNLLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, titlePNLLayout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jLabel2)
+                .addComponent(titleLBL)
                 .addGap(215, 215, 215))
         );
-        jPanel1Layout.setVerticalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
+        titlePNLLayout.setVerticalGroup(
+            titlePNLLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(titlePNLLayout.createSequentialGroup()
                 .addGap(29, 29, 29)
-                .addComponent(jLabel2)
+                .addComponent(titleLBL)
                 .addContainerGap(29, Short.MAX_VALUE))
         );
 
-        jPanel2.setBackground(new java.awt.Color(0, 51, 204));
+        gobackPNL.setBackground(new java.awt.Color(0, 51, 204));
 
         jButton1.setBackground(new java.awt.Color(204, 204, 204));
         jButton1.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
@@ -79,24 +79,24 @@ public class SharkGui extends javax.swing.JFrame {
             }
         });
 
-        javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
-        jPanel2.setLayout(jPanel2Layout);
-        jPanel2Layout.setHorizontalGroup(
-            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel2Layout.createSequentialGroup()
+        javax.swing.GroupLayout gobackPNLLayout = new javax.swing.GroupLayout(gobackPNL);
+        gobackPNL.setLayout(gobackPNLLayout);
+        gobackPNLLayout.setHorizontalGroup(
+            gobackPNLLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(gobackPNLLayout.createSequentialGroup()
                 .addGap(325, 325, 325)
                 .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 153, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
-        jPanel2Layout.setVerticalGroup(
-            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel2Layout.createSequentialGroup()
+        gobackPNLLayout.setVerticalGroup(
+            gobackPNLLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(gobackPNLLayout.createSequentialGroup()
                 .addGap(16, 16, 16)
                 .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(21, Short.MAX_VALUE))
         );
 
-        jPanel3.setBackground(new java.awt.Color(0, 51, 204));
+        factsPNL.setBackground(new java.awt.Color(0, 51, 204));
 
         jTextArea1.setBackground(new java.awt.Color(204, 204, 204));
         jTextArea1.setColumns(20);
@@ -105,18 +105,18 @@ public class SharkGui extends javax.swing.JFrame {
         jTextArea1.setText("(Cool Facts About Sharks)\n\n1) Sharks have existed for over 400 million years\n — older than dinosaurs and even trees.\n\n2) They can detect a drop of blood in the water from \nhundreds of meters away thanks to an extremely\n advanced sense of smell.\n\n3) Some sharks, like the Greenland shark, can live for\n over 250 years, making them one of the longest-living\n vertebrates on Earth.\n\n4)Sharks don’t have bones — their skeletons are made\n entirely of cartilage, which makes them flexible \n and fast.\n\n5)The Whale shark, the largest fish in the world,\n can grow longer than a bus and survive by eating \ntiny plankton.\n\n(How Sharks Are Affected by Sea Pollution)\n\nSharks are suffering heavily from the state of our \noceans. Plastic pollution breaks down into microplastics\n, which settle into the bodies of smaller fish and \neventually into sharks when they eat them. \nThese toxins build up in shark tissues, weakening their\n immune systems, harming reproduction, and making \nthem more vulnerable to disease. Abandoned fishing \nnets (“ghost nets”) also trap and drown sharks, \nespecially species like reef sharks and tiger sharks.\n Chemical runoff, oil spills, and declining fish\n populations from overfishing all combine to make life \nin the ocean more dangerous for sharks than ever \nbefore.");
         jScrollPane1.setViewportView(jTextArea1);
 
-        javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
-        jPanel3.setLayout(jPanel3Layout);
-        jPanel3Layout.setHorizontalGroup(
-            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
+        javax.swing.GroupLayout factsPNLLayout = new javax.swing.GroupLayout(factsPNL);
+        factsPNL.setLayout(factsPNLLayout);
+        factsPNLLayout.setHorizontalGroup(
+            factsPNLLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, factsPNLLayout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 279, Short.MAX_VALUE)
                 .addContainerGap())
         );
-        jPanel3Layout.setVerticalGroup(
-            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel3Layout.createSequentialGroup()
+        factsPNLLayout.setVerticalGroup(
+            factsPNLLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(factsPNLLayout.createSequentialGroup()
                 .addGap(14, 14, 14)
                 .addComponent(jScrollPane1)
                 .addContainerGap())
@@ -126,27 +126,27 @@ public class SharkGui extends javax.swing.JFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(titlePNL, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(gobackPNL, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addGroup(layout.createSequentialGroup()
-                        .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 516, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(sharkIMG, javax.swing.GroupLayout.PREFERRED_SIZE, 516, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jPanel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                        .addComponent(factsPNL, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
                 .addContainerGap())
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(titlePNL, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(gobackPNL, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jPanel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addComponent(sharkIMG, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(factsPNL, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addContainerGap(9, Short.MAX_VALUE))
         );
 
@@ -185,13 +185,13 @@ public class SharkGui extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JPanel factsPNL;
+    private javax.swing.JPanel gobackPNL;
     private javax.swing.JButton jButton1;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JPanel jPanel1;
-    private javax.swing.JPanel jPanel2;
-    private javax.swing.JPanel jPanel3;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTextArea jTextArea1;
+    private javax.swing.JLabel sharkIMG;
+    private javax.swing.JLabel titleLBL;
+    private javax.swing.JPanel titlePNL;
     // End of variables declaration//GEN-END:variables
 }

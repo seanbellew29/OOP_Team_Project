@@ -90,7 +90,7 @@
           <Group type="103" groupAlignment="0" attributes="0">
               <Group type="102" alignment="1" attributes="0">
                   <EmptySpace max="32767" attributes="0"/>
-                  <Component id="jLabel3" min="-2" max="-2" attributes="0"/>
+                  <Component id="titleLBL" min="-2" max="-2" attributes="0"/>
                   <EmptySpace min="-2" pref="287" max="-2" attributes="0"/>
               </Group>
           </Group>
@@ -99,14 +99,14 @@
           <Group type="103" groupAlignment="0" attributes="0">
               <Group type="102" alignment="0" attributes="0">
                   <EmptySpace min="-2" pref="37" max="-2" attributes="0"/>
-                  <Component id="jLabel3" min="-2" max="-2" attributes="0"/>
+                  <Component id="titleLBL" min="-2" max="-2" attributes="0"/>
                   <EmptySpace pref="38" max="32767" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
       </Layout>
       <SubComponents>
-        <Component class="javax.swing.JLabel" name="jLabel3">
+        <Component class="javax.swing.JLabel" name="titleLBL">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Stencil" size="48" style="1"/>

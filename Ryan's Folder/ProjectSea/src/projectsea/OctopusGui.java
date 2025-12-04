@@ -33,7 +33,7 @@ public class OctopusGui extends javax.swing.JFrame {
         jPanel2 = new javax.swing.JPanel();
         jButton1 = new javax.swing.JButton();
         octoPIC = new javax.swing.JLabel();
-        jPanel3 = new javax.swing.JPanel();
+        factsPNL = new javax.swing.JPanel();
         jScrollPane1 = new javax.swing.JScrollPane();
         octofactsTA = new javax.swing.JTextArea();
 
@@ -96,7 +96,7 @@ public class OctopusGui extends javax.swing.JFrame {
         octoPIC.setIcon(new javax.swing.ImageIcon("C:\\Users\\ryanl\\OneDrive\\Pictures\\Screenshots\\octopus pivture.png")); // NOI18N
         octoPIC.setText("jLabel1");
 
-        jPanel3.setBackground(new java.awt.Color(0, 51, 204));
+        factsPNL.setBackground(new java.awt.Color(0, 51, 204));
 
         octofactsTA.setBackground(new java.awt.Color(204, 204, 204));
         octofactsTA.setColumns(20);
@@ -105,18 +105,18 @@ public class OctopusGui extends javax.swing.JFrame {
         octofactsTA.setText("(Cool Facts About Octopuses)\n1) They have three hearts — two pump blood to the\n gills, and one pumps it to the rest of the body.\n\n2) Octopuses are escape artists — they can squeeze \nthrough any gap larger than their beak.\n\n3) They’re incredibly smart — capable of solving \npuzzles, opening jars, and even using tools.\n\n4) Masters of disguise — they can change colour,\n texture, and shape in less than a second.\n\n5) Each arm has a “mind of its own” — with two-\nthirds of their neurons located in their arms.\n\n(How Sea Pollution Affects Octopuses)\n1)  Plastic pollution harms their habitats, especially \nthe rocky crevices they hide in. Octopuses \nsometimes use bottle caps or trash as “shelter,” \nexposing them to chemicals and injury.\n\n2) Chemical pollution affects their brains, leading\n to stress, confusion, and difficulty hunting or \navoiding predators.\n\n3)Microplastics get into their diet, since they eat \ncrabs and fish that have already swallowed plastic. \nThis can cause organ damage and reduce their \nlifespan.\n\n 4) Climate change & warming oceans, partly driven \n  by pollution,disrupt breeding cycles and force \n  octopuses into deeper,older waters where food\n   is harder to find.");
         jScrollPane1.setViewportView(octofactsTA);
 
-        javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
-        jPanel3.setLayout(jPanel3Layout);
-        jPanel3Layout.setHorizontalGroup(
-            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
+        javax.swing.GroupLayout factsPNLLayout = new javax.swing.GroupLayout(factsPNL);
+        factsPNL.setLayout(factsPNLLayout);
+        factsPNLLayout.setHorizontalGroup(
+            factsPNLLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, factsPNLLayout.createSequentialGroup()
                 .addContainerGap(16, Short.MAX_VALUE)
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 263, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(14, 14, 14))
         );
-        jPanel3Layout.setVerticalGroup(
-            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel3Layout.createSequentialGroup()
+        factsPNLLayout.setVerticalGroup(
+            factsPNLLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(factsPNLLayout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 523, Short.MAX_VALUE)
                 .addContainerGap())
@@ -134,7 +134,7 @@ public class OctopusGui extends javax.swing.JFrame {
                     .addGroup(layout.createSequentialGroup()
                         .addComponent(octoPIC, javax.swing.GroupLayout.PREFERRED_SIZE, 678, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jPanel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
+                        .addComponent(factsPNL, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -145,7 +145,7 @@ public class OctopusGui extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(octoPIC, javax.swing.GroupLayout.PREFERRED_SIZE, 535, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(factsPNL, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
@@ -184,9 +184,9 @@ public class OctopusGui extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JPanel factsPNL;
     private javax.swing.JButton jButton1;
     private javax.swing.JPanel jPanel2;
-    private javax.swing.JPanel jPanel3;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JLabel octoPIC;
     private javax.swing.JTextArea octofactsTA;

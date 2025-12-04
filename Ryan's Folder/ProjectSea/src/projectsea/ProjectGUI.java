@@ -3,7 +3,8 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
 package projectsea;
-import projectsea.DonateGUI;
+import java.util.ArrayList;
+import javax.swing.JOptionPane;
 
 /**
  *
@@ -12,6 +13,11 @@ import projectsea.DonateGUI;
 public class ProjectGUI extends javax.swing.JFrame {
     
     private static final java.util.logging.Logger logger = java.util.logging.Logger.getLogger(ProjectGUI.class.getName());
+    private double avg;
+    private int total,rating;
+    private String input;
+    private ArrayList<Integer> ratings = new ArrayList<>();
+
 
     /**
      * Creates new form ProjectGUI
@@ -29,16 +35,17 @@ public class ProjectGUI extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jPanel1 = new javax.swing.JPanel();
+        titlePNL = new javax.swing.JPanel();
         titleLBL = new javax.swing.JLabel();
         jPanel2 = new javax.swing.JPanel();
-        jPanel4 = new javax.swing.JPanel();
+        bodyPNL = new javax.swing.JPanel();
         jScrollPane1 = new javax.swing.JScrollPane();
         infoTA = new javax.swing.JTextArea();
         jScrollPane2 = new javax.swing.JScrollPane();
         donateTA = new javax.swing.JTextArea();
         donateBTN = new javax.swing.JButton();
-        jPanel3 = new javax.swing.JPanel();
+        ratePNL = new javax.swing.JPanel();
+        menuPNL = new javax.swing.JPanel();
         sharkBTN = new javax.swing.JButton();
         turtleBTN = new javax.swing.JButton();
         dolphinBTN = new javax.swing.JButton();
@@ -46,13 +53,14 @@ public class ProjectGUI extends javax.swing.JFrame {
         homeBTN = new javax.swing.JButton();
         quizBTN = new javax.swing.JButton();
         sustainBTN = new javax.swing.JButton();
+        rateBTN = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setBackground(java.awt.Color.cyan);
 
-        jPanel1.setBackground(new java.awt.Color(153, 153, 153));
-        jPanel1.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        jPanel1.setForeground(new java.awt.Color(0, 204, 255));
+        titlePNL.setBackground(new java.awt.Color(153, 153, 153));
+        titlePNL.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        titlePNL.setForeground(new java.awt.Color(0, 204, 255));
 
         titleLBL.setBackground(new java.awt.Color(255, 255, 255));
         titleLBL.setFont(new java.awt.Font("Stencil", 0, 48)); // NOI18N
@@ -60,25 +68,25 @@ public class ProjectGUI extends javax.swing.JFrame {
         titleLBL.setText("Sea life INfograpgic");
         titleLBL.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
 
-        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
-        jPanel1.setLayout(jPanel1Layout);
-        jPanel1Layout.setHorizontalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
+        javax.swing.GroupLayout titlePNLLayout = new javax.swing.GroupLayout(titlePNL);
+        titlePNL.setLayout(titlePNLLayout);
+        titlePNLLayout.setHorizontalGroup(
+            titlePNLLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(titlePNLLayout.createSequentialGroup()
                 .addGap(443, 443, 443)
                 .addComponent(titleLBL)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
-        jPanel1Layout.setVerticalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
+        titlePNLLayout.setVerticalGroup(
+            titlePNLLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(titlePNLLayout.createSequentialGroup()
                 .addGap(25, 25, 25)
                 .addComponent(titleLBL)
                 .addContainerGap(24, Short.MAX_VALUE))
         );
 
-        jPanel4.setBackground(new java.awt.Color(0, 51, 204));
-        jPanel4.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED, new java.awt.Color(0, 153, 255), java.awt.Color.blue, new java.awt.Color(0, 51, 153), new java.awt.Color(0, 51, 204)));
+        bodyPNL.setBackground(new java.awt.Color(0, 51, 204));
+        bodyPNL.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED, new java.awt.Color(0, 153, 255), java.awt.Color.blue, new java.awt.Color(0, 51, 153), new java.awt.Color(0, 51, 204)));
 
         infoTA.setBackground(new java.awt.Color(204, 204, 204));
         infoTA.setColumns(20);
@@ -104,34 +112,47 @@ public class ProjectGUI extends javax.swing.JFrame {
             }
         });
 
-        javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
-        jPanel4.setLayout(jPanel4Layout);
-        jPanel4Layout.setHorizontalGroup(
-            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel4Layout.createSequentialGroup()
+        javax.swing.GroupLayout bodyPNLLayout = new javax.swing.GroupLayout(bodyPNL);
+        bodyPNL.setLayout(bodyPNLLayout);
+        bodyPNLLayout.setHorizontalGroup(
+            bodyPNLLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(bodyPNLLayout.createSequentialGroup()
                 .addGap(30, 30, 30)
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 1006, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel4Layout.createSequentialGroup()
+                .addGroup(bodyPNLLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(bodyPNLLayout.createSequentialGroup()
                         .addGap(39, 39, 39)
                         .addComponent(jScrollPane2, javax.swing.GroupLayout.DEFAULT_SIZE, 297, Short.MAX_VALUE)
                         .addContainerGap())
-                    .addGroup(jPanel4Layout.createSequentialGroup()
+                    .addGroup(bodyPNLLayout.createSequentialGroup()
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(donateBTN)
                         .addGap(103, 103, 103))))
         );
-        jPanel4Layout.setVerticalGroup(
-            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel4Layout.createSequentialGroup()
+        bodyPNLLayout.setVerticalGroup(
+            bodyPNLLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(bodyPNLLayout.createSequentialGroup()
                 .addContainerGap()
-                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addGroup(jPanel4Layout.createSequentialGroup()
+                .addGroup(bodyPNLLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addGroup(bodyPNLLayout.createSequentialGroup()
                         .addComponent(donateBTN, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(18, 18, 18)
                         .addComponent(jScrollPane2))
                     .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 486, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(18, Short.MAX_VALUE))
+        );
+
+        ratePNL.setBackground(new java.awt.Color(0, 51, 204));
+
+        javax.swing.GroupLayout ratePNLLayout = new javax.swing.GroupLayout(ratePNL);
+        ratePNL.setLayout(ratePNLLayout);
+        ratePNLLayout.setHorizontalGroup(
+            ratePNLLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 1384, Short.MAX_VALUE)
+        );
+        ratePNLLayout.setVerticalGroup(
+            ratePNLLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 100, Short.MAX_VALUE)
         );
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
@@ -140,18 +161,21 @@ public class ProjectGUI extends javax.swing.JFrame {
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel2Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jPanel4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(bodyPNL, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(ratePNL, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addContainerGap())
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel2Layout.createSequentialGroup()
-                .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 103, Short.MAX_VALUE))
+                .addComponent(bodyPNL, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(ratePNL, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
 
-        jPanel3.setBackground(new java.awt.Color(0, 0, 204));
-        jPanel3.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Segoe UI", 0, 12), new java.awt.Color(0, 0, 153))); // NOI18N
+        menuPNL.setBackground(new java.awt.Color(0, 0, 204));
+        menuPNL.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Segoe UI", 0, 12), new java.awt.Color(0, 0, 153))); // NOI18N
 
         sharkBTN.setBackground(new java.awt.Color(204, 204, 204));
         sharkBTN.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
@@ -223,11 +247,21 @@ public class ProjectGUI extends javax.swing.JFrame {
             }
         });
 
-        javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
-        jPanel3.setLayout(jPanel3Layout);
-        jPanel3Layout.setHorizontalGroup(
-            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
+        rateBTN.setBackground(new java.awt.Color(204, 204, 204));
+        rateBTN.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        rateBTN.setText("RATE INFOGRAPHIC");
+        rateBTN.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        rateBTN.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                rateBTNActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout menuPNLLayout = new javax.swing.GroupLayout(menuPNL);
+        menuPNL.setLayout(menuPNLLayout);
+        menuPNLLayout.setHorizontalGroup(
+            menuPNLLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, menuPNLLayout.createSequentialGroup()
                 .addGap(23, 23, 23)
                 .addComponent(octopusBTN, javax.swing.GroupLayout.PREFERRED_SIZE, 66, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(52, 52, 52)
@@ -236,6 +270,8 @@ public class ProjectGUI extends javax.swing.JFrame {
                 .addComponent(turtleBTN, javax.swing.GroupLayout.PREFERRED_SIZE, 62, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(54, 54, 54)
                 .addComponent(sharkBTN, javax.swing.GroupLayout.PREFERRED_SIZE, 66, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(50, 50, 50)
+                .addComponent(rateBTN)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(sustainBTN)
                 .addGap(18, 18, 18)
@@ -244,19 +280,20 @@ public class ProjectGUI extends javax.swing.JFrame {
                 .addComponent(homeBTN, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(15, 15, 15))
         );
-        jPanel3Layout.setVerticalGroup(
-            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel3Layout.createSequentialGroup()
+        menuPNLLayout.setVerticalGroup(
+            menuPNLLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(menuPNLLayout.createSequentialGroup()
                 .addContainerGap()
-                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                .addGroup(menuPNLLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addGroup(menuPNLLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                         .addComponent(quizBTN, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addComponent(sustainBTN, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addGroup(menuPNLLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                         .addComponent(turtleBTN, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addComponent(dolphinBTN, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addComponent(sharkBTN, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(octopusBTN, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(octopusBTN, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(rateBTN, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addComponent(homeBTN, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(18, Short.MAX_VALUE))
         );
@@ -269,21 +306,21 @@ public class ProjectGUI extends javax.swing.JFrame {
                 .addContainerGap()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(titlePNL, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addContainerGap())
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                         .addGap(0, 0, Short.MAX_VALUE)
                         .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(20, 20, 20))
-                    .addComponent(jPanel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                    .addComponent(menuPNL, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(titlePNL, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(menuPNL, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addContainerGap())
@@ -334,6 +371,37 @@ public class ProjectGUI extends javax.swing.JFrame {
         this.dispose();
     }//GEN-LAST:event_octopusBTNActionPerformed
 
+    private void rateBTNActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rateBTNActionPerformed
+        // TODO add your handling code here:
+        try {
+            input = JOptionPane.showInputDialog(null,"Rate the infographic from 1 to 10:");
+            
+
+            if (input == null) {
+            return; // user cancelled
+            }
+            rating = Integer.parseInt(input);
+
+            if (rating < 1 || rating > 10) {
+                JOptionPane.showMessageDialog(null,"Please enter a number between 1 and 10.");
+                return;  
+            }
+            ratings.add(rating);
+
+            // Calculate average rating
+            total = 0;
+            for (int r : ratings) {
+                total += r;
+            }
+            avg = (double) total / ratings.size();
+            JOptionPane.showMessageDialog(null,"Thank you!\nCurrent Average Rating: " + String.format("%.2f", avg));
+                 
+        } catch (NumberFormatException e) {
+            JOptionPane.showMessageDialog(null,"Please enter a valid number.");
+        }
+
+    }//GEN-LAST:event_rateBTNActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -360,22 +428,24 @@ public class ProjectGUI extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JPanel bodyPNL;
     private javax.swing.JButton dolphinBTN;
     private javax.swing.JButton donateBTN;
     private javax.swing.JTextArea donateTA;
     private javax.swing.JButton homeBTN;
     private javax.swing.JTextArea infoTA;
-    private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
-    private javax.swing.JPanel jPanel3;
-    private javax.swing.JPanel jPanel4;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane2;
+    private javax.swing.JPanel menuPNL;
     private javax.swing.JButton octopusBTN;
     private javax.swing.JButton quizBTN;
+    private javax.swing.JButton rateBTN;
+    private javax.swing.JPanel ratePNL;
     private javax.swing.JButton sharkBTN;
     private javax.swing.JButton sustainBTN;
     private javax.swing.JLabel titleLBL;
+    private javax.swing.JPanel titlePNL;
     private javax.swing.JButton turtleBTN;
     // End of variables declaration//GEN-END:variables
 }

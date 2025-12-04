@@ -30,7 +30,7 @@
               <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" attributes="0">
-                      <Component id="jPanel1" max="32767" attributes="0"/>
+                      <Component id="titlePNL" max="32767" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
                   </Group>
                   <Group type="102" alignment="1" attributes="0">
@@ -38,7 +38,7 @@
                       <Component id="jPanel2" min="-2" max="-2" attributes="0"/>
                       <EmptySpace min="-2" pref="20" max="-2" attributes="0"/>
                   </Group>
-                  <Component id="jPanel3" max="32767" attributes="0"/>
+                  <Component id="menuPNL" max="32767" attributes="0"/>
               </Group>
           </Group>
       </Group>
@@ -47,9 +47,9 @@
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" alignment="0" attributes="0">
               <EmptySpace max="-2" attributes="0"/>
-              <Component id="jPanel1" min="-2" max="-2" attributes="0"/>
+              <Component id="titlePNL" min="-2" max="-2" attributes="0"/>
               <EmptySpace max="-2" attributes="0"/>
-              <Component id="jPanel3" min="-2" max="-2" attributes="0"/>
+              <Component id="menuPNL" min="-2" max="-2" attributes="0"/>
               <EmptySpace max="-2" attributes="0"/>
               <Component id="jPanel2" max="32767" attributes="0"/>
               <EmptySpace max="-2" attributes="0"/>
@@ -58,7 +58,7 @@
     </DimensionLayout>
   </Layout>
   <SubComponents>
-    <Container class="javax.swing.JPanel" name="jPanel1">
+    <Container class="javax.swing.JPanel" name="titlePNL">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="99" green="99" red="99" type="rgb"/>
@@ -120,9 +120,12 @@
       <Layout>
         <DimensionLayout dim="0">
           <Group type="103" groupAlignment="0" attributes="0">
-              <Group type="102" alignment="0" attributes="0">
+              <Group type="102" attributes="0">
                   <EmptySpace max="-2" attributes="0"/>
-                  <Component id="jPanel4" max="32767" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Component id="bodyPNL" max="32767" attributes="0"/>
+                      <Component id="ratePNL" max="32767" attributes="0"/>
+                  </Group>
                   <EmptySpace max="-2" attributes="0"/>
               </Group>
           </Group>
@@ -130,14 +133,15 @@
         <DimensionLayout dim="1">
           <Group type="103" groupAlignment="0" attributes="0">
               <Group type="102" alignment="0" attributes="0">
-                  <Component id="jPanel4" min="-2" max="-2" attributes="0"/>
-                  <EmptySpace min="0" pref="103" max="32767" attributes="0"/>
+                  <Component id="bodyPNL" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace max="32767" attributes="0"/>
+                  <Component id="ratePNL" min="-2" max="-2" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
       </Layout>
       <SubComponents>
-        <Container class="javax.swing.JPanel" name="jPanel4">
+        <Container class="javax.swing.JPanel" name="bodyPNL">
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="cc" green="33" red="0" type="rgb"/>
@@ -258,9 +262,29 @@
             </Component>
           </SubComponents>
         </Container>
+        <Container class="javax.swing.JPanel" name="ratePNL">
+          <Properties>
+            <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="cc" green="33" red="0" type="rgb"/>
+            </Property>
+          </Properties>
+
+          <Layout>
+            <DimensionLayout dim="0">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <EmptySpace min="0" pref="1384" max="32767" attributes="0"/>
+              </Group>
+            </DimensionLayout>
+            <DimensionLayout dim="1">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <EmptySpace min="0" pref="100" max="32767" attributes="0"/>
+              </Group>
+            </DimensionLayout>
+          </Layout>
+        </Container>
       </SubComponents>
     </Container>
-    <Container class="javax.swing.JPanel" name="jPanel3">
+    <Container class="javax.swing.JPanel" name="menuPNL">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="cc" green="0" red="0" type="rgb"/>
@@ -286,6 +310,8 @@
                   <Component id="turtleBTN" min="-2" pref="62" max="-2" attributes="0"/>
                   <EmptySpace min="-2" pref="54" max="-2" attributes="0"/>
                   <Component id="sharkBTN" min="-2" pref="66" max="-2" attributes="0"/>
+                  <EmptySpace min="-2" pref="50" max="-2" attributes="0"/>
+                  <Component id="rateBTN" min="-2" max="-2" attributes="0"/>
                   <EmptySpace max="32767" attributes="0"/>
                   <Component id="sustainBTN" min="-2" max="-2" attributes="0"/>
                   <EmptySpace type="separate" max="-2" attributes="0"/>
@@ -310,6 +336,7 @@
                           <Component id="dolphinBTN" alignment="3" min="-2" pref="32" max="-2" attributes="0"/>
                           <Component id="sharkBTN" alignment="3" min="-2" pref="32" max="-2" attributes="0"/>
                           <Component id="octopusBTN" alignment="3" min="-2" pref="32" max="-2" attributes="0"/>
+                          <Component id="rateBTN" alignment="3" min="-2" pref="32" max="-2" attributes="0"/>
                       </Group>
                       <Component id="homeBTN" alignment="1" min="-2" pref="37" max="-2" attributes="0"/>
                   </Group>
@@ -450,6 +477,25 @@
           </Properties>
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="sustainBTNActionPerformed"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JButton" name="rateBTN">
+          <Properties>
+            <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="cc" green="cc" red="cc" type="rgb"/>
+            </Property>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Segoe UI" size="12" style="1"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="RATE INFOGRAPHIC"/>
+            <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+              <Border info="org.netbeans.modules.form.compat2.border.SoftBevelBorderInfo">
+                <BevelBorder/>
+              </Border>
+            </Property>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="rateBTNActionPerformed"/>
           </Events>
         </Component>
       </SubComponents>

@@ -23,15 +23,15 @@
   <Layout>
     <DimensionLayout dim="0">
       <Group type="103" groupAlignment="0" attributes="0">
-          <Component id="jPanel1" alignment="1" max="32767" attributes="0"/>
+          <Component id="titlePNL" alignment="1" max="32767" attributes="0"/>
           <Group type="102" attributes="0">
               <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Component id="jPanel2" max="32767" attributes="0"/>
+                  <Component id="gobackPNL" max="32767" attributes="0"/>
                   <Group type="102" attributes="0">
-                      <Component id="jLabel1" min="-2" pref="516" max="-2" attributes="0"/>
+                      <Component id="sharkIMG" min="-2" pref="516" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
-                      <Component id="jPanel3" max="32767" attributes="0"/>
+                      <Component id="factsPNL" max="32767" attributes="0"/>
                   </Group>
               </Group>
               <EmptySpace max="-2" attributes="0"/>
@@ -41,13 +41,13 @@
     <DimensionLayout dim="1">
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" alignment="0" attributes="0">
-              <Component id="jPanel1" min="-2" max="-2" attributes="0"/>
+              <Component id="titlePNL" min="-2" max="-2" attributes="0"/>
               <EmptySpace max="-2" attributes="0"/>
-              <Component id="jPanel2" min="-2" max="-2" attributes="0"/>
+              <Component id="gobackPNL" min="-2" max="-2" attributes="0"/>
               <EmptySpace type="unrelated" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                  <Component id="jLabel1" max="32767" attributes="0"/>
-                  <Component id="jPanel3" max="32767" attributes="0"/>
+                  <Component id="sharkIMG" max="32767" attributes="0"/>
+                  <Component id="factsPNL" max="32767" attributes="0"/>
               </Group>
               <EmptySpace pref="9" max="32767" attributes="0"/>
           </Group>
@@ -55,7 +55,7 @@
     </DimensionLayout>
   </Layout>
   <SubComponents>
-    <Component class="javax.swing.JLabel" name="jLabel1">
+    <Component class="javax.swing.JLabel" name="sharkIMG">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
           <Image iconType="2" name="C:\Users\ryanl\OneDrive\Pictures\Screenshots\shark.png"/>
@@ -63,7 +63,7 @@
         <Property name="text" type="java.lang.String" value="jLabel1"/>
       </Properties>
     </Component>
-    <Container class="javax.swing.JPanel" name="jPanel1">
+    <Container class="javax.swing.JPanel" name="titlePNL">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="99" green="99" red="99" type="rgb"/>
@@ -80,7 +80,7 @@
           <Group type="103" groupAlignment="0" attributes="0">
               <Group type="102" alignment="1" attributes="0">
                   <EmptySpace max="32767" attributes="0"/>
-                  <Component id="jLabel2" min="-2" max="-2" attributes="0"/>
+                  <Component id="titleLBL" min="-2" max="-2" attributes="0"/>
                   <EmptySpace min="-2" pref="215" max="-2" attributes="0"/>
               </Group>
           </Group>
@@ -89,14 +89,14 @@
           <Group type="103" groupAlignment="0" attributes="0">
               <Group type="102" alignment="0" attributes="0">
                   <EmptySpace min="-2" pref="29" max="-2" attributes="0"/>
-                  <Component id="jLabel2" min="-2" max="-2" attributes="0"/>
+                  <Component id="titleLBL" min="-2" max="-2" attributes="0"/>
                   <EmptySpace pref="29" max="32767" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
       </Layout>
       <SubComponents>
-        <Component class="javax.swing.JLabel" name="jLabel2">
+        <Component class="javax.swing.JLabel" name="titleLBL">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Stencil" size="48" style="1"/>
@@ -114,7 +114,7 @@
         </Component>
       </SubComponents>
     </Container>
-    <Container class="javax.swing.JPanel" name="jPanel2">
+    <Container class="javax.swing.JPanel" name="gobackPNL">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="cc" green="33" red="0" type="rgb"/>
@@ -163,7 +163,7 @@
         </Component>
       </SubComponents>
     </Container>
-    <Container class="javax.swing.JPanel" name="jPanel3">
+    <Container class="javax.swing.JPanel" name="factsPNL">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="cc" green="33" red="0" type="rgb"/>

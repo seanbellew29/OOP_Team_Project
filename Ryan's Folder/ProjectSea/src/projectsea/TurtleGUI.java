@@ -28,75 +28,75 @@ public class TurtleGUI extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jPanel1 = new javax.swing.JPanel();
-        jLabel1 = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
-        jPanel2 = new javax.swing.JPanel();
-        jButton1 = new javax.swing.JButton();
-        jPanel3 = new javax.swing.JPanel();
+        titlePNL = new javax.swing.JPanel();
+        titleLBL = new javax.swing.JLabel();
+        turtleIMG = new javax.swing.JLabel();
+        gobackPNL = new javax.swing.JPanel();
+        gobackBTN = new javax.swing.JButton();
+        factsPNL = new javax.swing.JPanel();
         jScrollPane1 = new javax.swing.JScrollPane();
         jTextArea1 = new javax.swing.JTextArea();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jPanel1.setBackground(new java.awt.Color(153, 153, 153));
-        jPanel1.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        titlePNL.setBackground(new java.awt.Color(153, 153, 153));
+        titlePNL.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
 
-        jLabel1.setFont(new java.awt.Font("Stencil", 1, 48)); // NOI18N
-        jLabel1.setForeground(new java.awt.Color(0, 51, 204));
-        jLabel1.setText("TURTLE FACTS");
-        jLabel1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        titleLBL.setFont(new java.awt.Font("Stencil", 1, 48)); // NOI18N
+        titleLBL.setForeground(new java.awt.Color(0, 51, 204));
+        titleLBL.setText("TURTLE FACTS");
+        titleLBL.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
 
-        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
-        jPanel1.setLayout(jPanel1Layout);
-        jPanel1Layout.setHorizontalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+        javax.swing.GroupLayout titlePNLLayout = new javax.swing.GroupLayout(titlePNL);
+        titlePNL.setLayout(titlePNLLayout);
+        titlePNLLayout.setHorizontalGroup(
+            titlePNLLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, titlePNLLayout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jLabel1)
+                .addComponent(titleLBL)
                 .addGap(243, 243, 243))
         );
-        jPanel1Layout.setVerticalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+        titlePNLLayout.setVerticalGroup(
+            titlePNLLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, titlePNLLayout.createSequentialGroup()
                 .addContainerGap(33, Short.MAX_VALUE)
-                .addComponent(jLabel1)
+                .addComponent(titleLBL)
                 .addGap(28, 28, 28))
         );
 
-        jLabel2.setIcon(new javax.swing.ImageIcon("C:\\Users\\ryanl\\OneDrive\\Pictures\\Screenshots\\turtle rubish.png")); // NOI18N
-        jLabel2.setText("jLabel2");
+        turtleIMG.setIcon(new javax.swing.ImageIcon("C:\\Users\\ryanl\\OneDrive\\Pictures\\Screenshots\\turtle rubish.png")); // NOI18N
+        turtleIMG.setText("jLabel2");
 
-        jPanel2.setBackground(new java.awt.Color(0, 51, 204));
+        gobackPNL.setBackground(new java.awt.Color(0, 51, 204));
 
-        jButton1.setBackground(new java.awt.Color(204, 204, 204));
-        jButton1.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
-        jButton1.setText("Go back to Infographic");
-        jButton1.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        gobackBTN.setBackground(new java.awt.Color(204, 204, 204));
+        gobackBTN.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        gobackBTN.setText("Go back to Infographic");
+        gobackBTN.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        gobackBTN.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                gobackBTNActionPerformed(evt);
             }
         });
 
-        javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
-        jPanel2.setLayout(jPanel2Layout);
-        jPanel2Layout.setHorizontalGroup(
-            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel2Layout.createSequentialGroup()
+        javax.swing.GroupLayout gobackPNLLayout = new javax.swing.GroupLayout(gobackPNL);
+        gobackPNL.setLayout(gobackPNLLayout);
+        gobackPNLLayout.setHorizontalGroup(
+            gobackPNLLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(gobackPNLLayout.createSequentialGroup()
                 .addGap(380, 380, 380)
-                .addComponent(jButton1)
+                .addComponent(gobackBTN)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
-        jPanel2Layout.setVerticalGroup(
-            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel2Layout.createSequentialGroup()
+        gobackPNLLayout.setVerticalGroup(
+            gobackPNLLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(gobackPNLLayout.createSequentialGroup()
                 .addGap(19, 19, 19)
-                .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(gobackBTN, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(15, Short.MAX_VALUE))
         );
 
-        jPanel3.setBackground(new java.awt.Color(0, 51, 204));
+        factsPNL.setBackground(new java.awt.Color(0, 51, 204));
 
         jTextArea1.setBackground(new java.awt.Color(204, 204, 204));
         jTextArea1.setColumns(20);
@@ -105,18 +105,18 @@ public class TurtleGUI extends javax.swing.JFrame {
         jTextArea1.setText("(Cool Facts About Sea Turtles)\n\n1)Sea turtles have existed for over 100 million years.\n\n2)Some species migrate thousands of miles across\n oceans every year.\n\n3)They can hold their breath for up to 7 hours\n while resting.\n\n4)Female turtles return to the exact beach they\n were born on to lay eggs — sometimes after\n decades.\n\n(How Sea Pollution Affects Sea Turtles)\n\n1)Turtles often mistake plastic bags and balloons\n for jellyfish, their favourite food, causing choking\n or starvation.\n\n2)Oil spills coat their shells, making movement,\n buoyancy, and temperature regulation difficult.\n\n3)Pollution weakens the seagrass and coral \necosystems turtles depend on.\n\n4)Entanglement in plastic rings, nets, or fishing line\n injures or traps turtles, often fatally.\n\n5)Polluted beaches make it harder for hatchlings to\n reach the sea safely.\n");
         jScrollPane1.setViewportView(jTextArea1);
 
-        javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
-        jPanel3.setLayout(jPanel3Layout);
-        jPanel3Layout.setHorizontalGroup(
-            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel3Layout.createSequentialGroup()
+        javax.swing.GroupLayout factsPNLLayout = new javax.swing.GroupLayout(factsPNL);
+        factsPNL.setLayout(factsPNLLayout);
+        factsPNLLayout.setHorizontalGroup(
+            factsPNLLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(factsPNLLayout.createSequentialGroup()
                 .addGap(25, 25, 25)
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 266, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(20, Short.MAX_VALUE))
         );
-        jPanel3Layout.setVerticalGroup(
-            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel3Layout.createSequentialGroup()
+        factsPNLLayout.setVerticalGroup(
+            factsPNLLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(factsPNLLayout.createSequentialGroup()
                 .addGap(27, 27, 27)
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 470, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(43, Short.MAX_VALUE))
@@ -126,40 +126,40 @@ public class TurtleGUI extends javax.swing.JFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(titlePNL, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
                         .addGap(6, 6, 6)
-                        .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 537, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(turtleIMG, javax.swing.GroupLayout.PREFERRED_SIZE, 537, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jPanel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(factsPNL, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addContainerGap())
-                    .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                    .addComponent(gobackPNL, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(titlePNL, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(gobackPNL, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel2)
-                    .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(turtleIMG)
+                    .addComponent(factsPNL, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(0, 6, Short.MAX_VALUE))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+    private void gobackBTNActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_gobackBTNActionPerformed
         // TODO add your handling code here:
         new ProjectGUI().setVisible(true);
         this.dispose();
-    }//GEN-LAST:event_jButton1ActionPerformed
+    }//GEN-LAST:event_gobackBTNActionPerformed
 
     /**
      * @param args the command line arguments
@@ -187,13 +187,13 @@ public class TurtleGUI extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JPanel jPanel1;
-    private javax.swing.JPanel jPanel2;
-    private javax.swing.JPanel jPanel3;
+    private javax.swing.JPanel factsPNL;
+    private javax.swing.JButton gobackBTN;
+    private javax.swing.JPanel gobackPNL;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTextArea jTextArea1;
+    private javax.swing.JLabel titleLBL;
+    private javax.swing.JPanel titlePNL;
+    private javax.swing.JLabel turtleIMG;
     // End of variables declaration//GEN-END:variables
 }

@@ -21,6 +21,7 @@ public class DonateGUI extends javax.swing.JFrame {
     private final ArrayList<Double> donationAmounts = new ArrayList<>();
     private final ArrayList<String> donationReasons = new ArrayList<>();
     
+    
 
 
 
@@ -42,7 +43,7 @@ public class DonateGUI extends javax.swing.JFrame {
     private void initComponents() {
 
         headerPNL = new javax.swing.JPanel();
-        jLabel3 = new javax.swing.JLabel();
+        titleLBL = new javax.swing.JLabel();
         IMG = new javax.swing.JLabel();
         IMG2 = new javax.swing.JLabel();
         donationPNL = new javax.swing.JPanel();
@@ -63,10 +64,10 @@ public class DonateGUI extends javax.swing.JFrame {
         headerPNL.setBackground(new java.awt.Color(153, 153, 153));
         headerPNL.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
 
-        jLabel3.setFont(new java.awt.Font("Stencil", 1, 48)); // NOI18N
-        jLabel3.setForeground(new java.awt.Color(0, 51, 204));
-        jLabel3.setText("DONATION PAGE");
-        jLabel3.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        titleLBL.setFont(new java.awt.Font("Stencil", 1, 48)); // NOI18N
+        titleLBL.setForeground(new java.awt.Color(0, 51, 204));
+        titleLBL.setText("DONATION PAGE");
+        titleLBL.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
 
         javax.swing.GroupLayout headerPNLLayout = new javax.swing.GroupLayout(headerPNL);
         headerPNL.setLayout(headerPNLLayout);
@@ -74,14 +75,14 @@ public class DonateGUI extends javax.swing.JFrame {
             headerPNLLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, headerPNLLayout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jLabel3)
+                .addComponent(titleLBL)
                 .addGap(287, 287, 287))
         );
         headerPNLLayout.setVerticalGroup(
             headerPNLLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(headerPNLLayout.createSequentialGroup()
                 .addGap(37, 37, 37)
-                .addComponent(jLabel3)
+                .addComponent(titleLBL)
                 .addContainerGap(38, Short.MAX_VALUE))
         );
 
@@ -291,28 +292,28 @@ public class DonateGUI extends javax.swing.JFrame {
     private void donateBTNActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_donateBTNActionPerformed
         // TODO add your handling code here:                                          
         try {
-        double amount = Double.parseDouble(amountTF.getText());
-        String reason = reasonTF.getText();
+            amount = Double.parseDouble(amountTF.getText());
+            reason = reasonTF.getText();
 
-        if (reason.isEmpty()) {
-            JOptionPane.showMessageDialog(null, "Please enter a reason.");
-            return;
-        }
+            if (reason.isEmpty()) {
+                JOptionPane.showMessageDialog(null, "Please enter a reason.");
+                return;
+            }
 
-        // Store donation in lists
-        donationAmounts.add(amount);
-        donationReasons.add(reason);
+             // Store donation in lists
+            donationAmounts.add(amount);
+            donationReasons.add(reason);
 
-        totalRaised += amount;
-        amountTA.append("€" + amount + " - " + reason + "\n");
+            totalRaised += amount;
+            amountTA.append("€" + amount + " - " + reason + "\n");
 
-        // Clear text fields
-        amountTF.setText("");
-        reasonTF.setText("");
-
-        JOptionPane.showMessageDialog(null, "Donation added, thank you so much !");
+            // Clear text fields
+            amountTF.setText("");
+            reasonTF.setText("");
+            JOptionPane.showMessageDialog(null, "Donation added, thank you so much !");
+            
         } catch (NumberFormatException e) {
-        JOptionPane.showMessageDialog(null, "Please enter a valid number.");
+            JOptionPane.showMessageDialog(null, "Please enter a valid number.");
         }
 
 
@@ -320,18 +321,19 @@ public class DonateGUI extends javax.swing.JFrame {
 
     private void amountBTNActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_amountBTNActionPerformed
         // TODO add your handling code here:
+        
         amountTA.setText("Total Raised: €" + totalRaised);
     }//GEN-LAST:event_amountBTNActionPerformed
 
     private void deleteBTNActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_deleteBTNActionPerformed
         // TODO add your handling code here:
         if (donationAmounts.isEmpty()) {
-        JOptionPane.showMessageDialog(null, "No donations to delete.");
-        return;
+            JOptionPane.showMessageDialog(null, "No donations to delete.");
+            return;
         }
 
         // Remove the last donation
-        double lastAmount = donationAmounts.remove(donationAmounts.size() - 1);
+        lastAmount = donationAmounts.remove(donationAmounts.size() - 1);
         donationReasons.remove(donationReasons.size() - 1);
 
         totalRaised -= lastAmount;
@@ -339,7 +341,7 @@ public class DonateGUI extends javax.swing.JFrame {
         // Rebuild the text area
         amountTA.setText("");
         for (int i = 0; i < donationAmounts.size(); i++) {
-        amountTA.append("€" + donationAmounts.get(i) + " - " + donationReasons.get(i) + "\n");
+            amountTA.append("€" + donationAmounts.get(i) + " - " + donationReasons.get(i) + "\n");
         }
 
         JOptionPane.showMessageDialog(null, "Last donation removed!");
@@ -383,9 +385,9 @@ public class DonateGUI extends javax.swing.JFrame {
     private javax.swing.JButton gobckBTN;
     private javax.swing.JPanel gobckPNL;
     private javax.swing.JPanel headerPNL;
-    private javax.swing.JLabel jLabel3;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JLabel reasonLBL;
     private javax.swing.JTextField reasonTF;
+    private javax.swing.JLabel titleLBL;
     // End of variables declaration//GEN-END:variables
 }
