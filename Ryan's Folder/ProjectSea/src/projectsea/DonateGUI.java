@@ -4,6 +4,9 @@
  */
 package projectsea;
 
+import java.io.BufferedWriter;
+import java.io.FileWriter;
+import java.io.IOException;
 import java.util.ArrayList;
 import javax.swing.JOptionPane;
 
@@ -312,8 +315,24 @@ public class DonateGUI extends javax.swing.JFrame {
             reasonTF.setText("");
             JOptionPane.showMessageDialog(null, "Donation added, thank you so much !");
             
-        } catch (NumberFormatException e) {
+        }catch (NumberFormatException e) {
             JOptionPane.showMessageDialog(null, "Please enter a valid number.");
+        }
+        
+        
+        try (BufferedWriter donate = new BufferedWriter(new FileWriter("donations.txt", true))) {
+
+        donate.write("Donation Amount: " + amount);
+        donate.newLine();
+
+        donate.write("Reason: " + reason);
+        donate.newLine();
+
+        donate.write("-------------------------------");
+        donate.newLine();
+
+        } catch (IOException e) {
+        System.out.println("An error occurred: " + e);
         }
 
 
