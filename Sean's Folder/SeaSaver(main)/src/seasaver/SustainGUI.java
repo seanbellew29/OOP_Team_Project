@@ -28,8 +28,8 @@ public class SustainGUI extends javax.swing.JFrame {
     /**
      */
     public SustainGUI() {   //Constructor
-        initComponents();
-        result = new ArrayList<>(); 
+        initComponents();   
+        result = new ArrayList<>();     
         scoreList = new ArrayList<>();
         imgLBL.setVisible(false);
     }

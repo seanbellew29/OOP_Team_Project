@@ -3,6 +3,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
  */
 package HomePage;
+import LoginPage.LoginPageGUI;
 
 /**
  *
@@ -15,8 +16,8 @@ public class SeaSaver {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        SeaSaverHomeGUI HomePage = new SeaSaverHomeGUI();
-        HomePage.setVisible(true);
+        LoginPageGUI Login = new LoginPageGUI();
+        Login.setVisible(true);
     }
     
 }
