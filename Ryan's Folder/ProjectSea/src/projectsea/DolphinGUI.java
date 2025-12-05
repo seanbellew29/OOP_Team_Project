@@ -155,6 +155,7 @@ public class DolphinGUI extends javax.swing.JFrame {
 
     private void gobackBTNActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_gobackBTNActionPerformed
         // TODO add your handling code here:
+        //brings you back to main infographic page 
         new ProjectGUI().setVisible(true);
         this.dispose();
     }//GEN-LAST:event_gobackBTNActionPerformed

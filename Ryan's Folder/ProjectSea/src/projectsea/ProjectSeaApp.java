@@ -14,6 +14,7 @@ public class ProjectSeaApp {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
+        //makes the gui visibale
         ProjectGUI mainGUI = new ProjectGUI();
         mainGUI.setVisible(true);
         // TODO code application logic here

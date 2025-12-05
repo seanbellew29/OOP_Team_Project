@@ -35,6 +35,7 @@ public class DonateGUI extends javax.swing.JFrame {
     /**
      * Creates new form DonateGUI
      */
+    
     public DonateGUI() {
         initComponents();
         //initialize lists that stores the amountts and  reasons
@@ -301,6 +302,7 @@ public class DonateGUI extends javax.swing.JFrame {
 
     private void gobckBTNActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_gobckBTNActionPerformed
         // TODO add your handling code here:
+        
         //brings you back to the main infographic page
         new ProjectGUI().setVisible(true);
         this.dispose();
@@ -339,17 +341,21 @@ public class DonateGUI extends javax.swing.JFrame {
         
         //saves donation to file
         try (BufferedWriter donate = new BufferedWriter(new FileWriter("donations.txt", true))) {
-
+            
+        //wrtie the donation amount to file
         donate.write("Donation Amount: " + amount);
-        donate.newLine();
+        donate.newLine();//moves onto the next line in the file
 
+        //writes the reason to file and moves onto next line
         donate.write("Reason: " + reason);
         donate.newLine();
-
+        
+        //i added a seperater line to make the donations easier to read 
         donate.write("-------------------------------");
         donate.newLine();
 
         } catch (IOException e) {
+            //if there is an error print the reason 
         System.out.println("An error occurred: " + e);
         }
 
@@ -358,6 +364,7 @@ public class DonateGUI extends javax.swing.JFrame {
 
     private void amountBTNActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_amountBTNActionPerformed
         // TODO add your handling code here:
+        
         //shows only the total a ount raised 
         amountTA.setText("Total Raised: €" + totalRaised);
     }//GEN-LAST:event_amountBTNActionPerformed

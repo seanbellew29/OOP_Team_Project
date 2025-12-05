@@ -16,14 +16,17 @@ public class ProjectGUI extends javax.swing.JFrame {
     private double avg;
     private int total,rating;
     private String input;
+    //stores the ratings so we can later calculate the avg
     private ArrayList<Integer> ratings;
 
 
     /**
      * Creates new form ProjectGUI
      */
+    
     public ProjectGUI() {
         initComponents();
+        //initialize lists that stores the ratings
         ratings = new ArrayList<>();
 
     }
@@ -333,6 +336,8 @@ public class ProjectGUI extends javax.swing.JFrame {
 
     private void donateBTNActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_donateBTNActionPerformed
         // TODO add your handling code here:
+        
+        //brinsg you to the donation page 
         new DonateGUI().setVisible(true);
         this.dispose();
     }//GEN-LAST:event_donateBTNActionPerformed
@@ -351,24 +356,31 @@ public class ProjectGUI extends javax.swing.JFrame {
 
     private void sharkBTNActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_sharkBTNActionPerformed
         // TODO add your handling code here:
+        //brings you to the shark page 
         new SharkGui().setVisible(true);
         this.dispose();
     }//GEN-LAST:event_sharkBTNActionPerformed
 
     private void turtleBTNActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_turtleBTNActionPerformed
         // TODO add your handling code here:
+        
+        //brinngs you to the turtle page 
         new TurtleGUI().setVisible(true);
         this.dispose();
     }//GEN-LAST:event_turtleBTNActionPerformed
 
     private void dolphinBTNActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_dolphinBTNActionPerformed
         // TODO add your handling code here:
+        
+        //bbrings you to the dolphin page 
         new DolphinGUI().setVisible(true);
         this.dispose();
     }//GEN-LAST:event_dolphinBTNActionPerformed
 
     private void octopusBTNActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_octopusBTNActionPerformed
         // TODO add your handling code here:
+        
+        //brings you to the octopus page 
         new OctopusGui().setVisible(true);
         this.dispose();
     }//GEN-LAST:event_octopusBTNActionPerformed
@@ -376,29 +388,37 @@ public class ProjectGUI extends javax.swing.JFrame {
     private void rateBTNActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rateBTNActionPerformed
         // TODO add your handling code here:
         try {
+            //asks the user to rate the i foraphic from 1-10 using JOP
             input = JOptionPane.showInputDialog(null,"Rate the infographic from 1 to 10:");
             
-
+            //if the user eneters nothing or closes the dialog stop the mehtod 
             if (input == null) {
             return; // user cancelled
             }
+            //convert the text input into an integer 
             rating = Integer.parseInt(input);
-
+            
+            //validates the rating is within the range of 1-10
             if (rating < 1 || rating > 10) {
                 JOptionPane.showMessageDialog(null,"Please enter a number between 1 and 10.");
                 return;  
             }
+            
+            //adds the avlid rting to the list of all ratings
             ratings.add(rating);
 
-            // Calculate average rating
+            // Calculate the totla of all to compute the average later 
             total = 0;
             for (int r : ratings) {
                 total += r;
             }
+            //compute the average rating 
             avg = (double) total / ratings.size();
+            //Display the average rsting rounding to 2 decimal paces usuing String.format
             JOptionPane.showMessageDialog(null,"Thank you!\nCurrent Average Rating: " + String.format("%.2f", avg));//puts the donation to 2 decimal places
                  
         } catch (NumberFormatException e) {
+            //this hpprns if the user enters something that is not a number
             JOptionPane.showMessageDialog(null,"Please enter a valid number.");
         }
 
