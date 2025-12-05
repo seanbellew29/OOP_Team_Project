@@ -57,6 +57,7 @@ public class LoginPageGUI extends javax.swing.JFrame {
         passwordLBL.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         passwordLBL.setText("Password :");
 
+        loginBTN.setBackground(new java.awt.Color(102, 255, 102));
         loginBTN.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         loginBTN.setText("LOGIN");
         loginBTN.addActionListener(new java.awt.event.ActionListener() {
@@ -159,7 +160,7 @@ public class LoginPageGUI extends javax.swing.JFrame {
     private void loginBTNActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_loginBTNActionPerformed
         // TODO add your handling code here:
         String username = usernameTF.getText();
-        String password = passwordTF.getText();
+        String password = String.valueOf(passwordTF.getPassword());
         
         String savedLogin = username + "," + password;
         boolean correctPass = false;
@@ -174,12 +175,12 @@ public class LoginPageGUI extends javax.swing.JFrame {
             JOptionPane.showMessageDialog(null, "Error Reading to the file");
         }
         if(correctPass){
-            JOptionPane.showMessageDialog(null, "Login Successful");
+            JOptionPane.showMessageDialog(null, "Login Successful");    //will display when Username and Password matches the singup file
         
-        new SeaSaverHomeGUI().setVisible(true);
-        this.dispose();
+        new SeaSaverHomeGUI().setVisible(true); //sets the home page visible 
+        this.dispose(); //log in page disappears after the homepage is displayed
         }else{
-            JOptionPane.showMessageDialog(null, "Invalid credentials");
+            JOptionPane.showMessageDialog(null, "Invalid credentials");//invalid username or password will display this message
         }
     }//GEN-LAST:event_loginBTNActionPerformed
 
