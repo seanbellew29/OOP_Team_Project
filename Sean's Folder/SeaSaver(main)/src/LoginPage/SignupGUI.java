@@ -36,12 +36,12 @@ public class SignupGUI extends javax.swing.JFrame {
         usernameLBL = new javax.swing.JLabel();
         passwordLBL = new javax.swing.JLabel();
         usernameTF = new javax.swing.JTextField();
-        passwordTF = new javax.swing.JTextField();
         loginBTN = new javax.swing.JButton();
         confirmBTN = new javax.swing.JButton();
         jPanel1 = new javax.swing.JPanel();
         jPanel2 = new javax.swing.JPanel();
         jLabel2 = new javax.swing.JLabel();
+        passwordTF = new javax.swing.JPasswordField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -103,6 +103,12 @@ public class SignupGUI extends javax.swing.JFrame {
                 .addGap(31, 31, 31))
         );
 
+        passwordTF.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                passwordTFActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -120,8 +126,8 @@ public class SignupGUI extends javax.swing.JFrame {
                                 .addGap(18, 18, 18)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                                     .addComponent(confirmBTN, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                    .addComponent(passwordTF)
-                                    .addComponent(usernameTF)))))
+                                    .addComponent(usernameTF)
+                                    .addComponent(passwordTF)))))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(69, 69, 69)
                         .addComponent(jLabel1)))
@@ -194,6 +200,10 @@ public class SignupGUI extends javax.swing.JFrame {
 
     }//GEN-LAST:event_confirmBTNActionPerformed
 
+    private void passwordTFActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_passwordTFActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_passwordTFActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -227,7 +237,7 @@ public class SignupGUI extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel2;
     private javax.swing.JButton loginBTN;
     private javax.swing.JLabel passwordLBL;
-    private javax.swing.JTextField passwordTF;
+    private javax.swing.JPasswordField passwordTF;
     private javax.swing.JLabel usernameLBL;
     private javax.swing.JTextField usernameTF;
     // End of variables declaration//GEN-END:variables

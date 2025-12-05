@@ -39,12 +39,12 @@ public class LoginPageGUI extends javax.swing.JFrame {
         usernameLBL = new javax.swing.JLabel();
         passwordLBL = new javax.swing.JLabel();
         usernameTF = new javax.swing.JTextField();
-        passwordTF = new javax.swing.JTextField();
         loginBTN = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
         signupBTN = new javax.swing.JButton();
         jPanel3 = new javax.swing.JPanel();
         jLabel2 = new javax.swing.JLabel();
+        passwordTF = new javax.swing.JPasswordField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -56,12 +56,6 @@ public class LoginPageGUI extends javax.swing.JFrame {
 
         passwordLBL.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         passwordLBL.setText("Password :");
-
-        passwordTF.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                passwordTFActionPerformed(evt);
-            }
-        });
 
         loginBTN.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         loginBTN.setText("LOGIN");
@@ -109,14 +103,14 @@ public class LoginPageGUI extends javax.swing.JFrame {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addGap(17, 17, 17)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addGroup(layout.createSequentialGroup()
                         .addComponent(usernameLBL)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(usernameTF, javax.swing.GroupLayout.PREFERRED_SIZE, 134, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(layout.createSequentialGroup()
                         .addComponent(passwordLBL, javax.swing.GroupLayout.PREFERRED_SIZE, 99, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(passwordTF, javax.swing.GroupLayout.PREFERRED_SIZE, 136, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap(328, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
@@ -162,10 +156,6 @@ public class LoginPageGUI extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void passwordTFActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_passwordTFActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_passwordTFActionPerformed
-
     private void loginBTNActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_loginBTNActionPerformed
         // TODO add your handling code here:
         String username = usernameTF.getText();
@@ -173,15 +163,15 @@ public class LoginPageGUI extends javax.swing.JFrame {
         
         String savedLogin = username + "," + password;
         boolean correctPass = false;
-       try(BufferedReader read = new BufferedReader(new FileReader("signup.txt"))){
+       try(BufferedReader read = new BufferedReader(new FileReader("signup.txt"))){ //Reads file called signup.txt 
         String line;
          while((line = read.readLine()) != null){
-             if(line.equals(savedLogin)){
+             if(line.equals(savedLogin)){   //if the log in is the same as the text in the file then password and username is correct
                  correctPass = true;
              }
             }
         }catch(IOException e){
-            JOptionPane.showMessageDialog(null, "Error Reading the file");
+            JOptionPane.showMessageDialog(null, "Error Reading to the file");
         }
         if(correctPass){
             JOptionPane.showMessageDialog(null, "Login Successful");
@@ -189,7 +179,7 @@ public class LoginPageGUI extends javax.swing.JFrame {
         new SeaSaverHomeGUI().setVisible(true);
         this.dispose();
         }else{
-            JOptionPane.showMessageDialog(null, "Invalid password or Username");
+            JOptionPane.showMessageDialog(null, "Invalid credentials");
         }
     }//GEN-LAST:event_loginBTNActionPerformed
 
@@ -231,7 +221,7 @@ public class LoginPageGUI extends javax.swing.JFrame {
     private javax.swing.JButton loginBTN;
     private javax.swing.JLabel loginLBL;
     private javax.swing.JLabel passwordLBL;
-    private javax.swing.JTextField passwordTF;
+    private javax.swing.JPasswordField passwordTF;
     private javax.swing.JButton signupBTN;
     private javax.swing.JLabel usernameLBL;
     private javax.swing.JTextField usernameTF;

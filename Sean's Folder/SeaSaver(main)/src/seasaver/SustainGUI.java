@@ -4,15 +4,15 @@
  */
 package seasaver;
 import HomePage.SeaSaverHomeGUI;
-import Frame2.ProjectGUI;
-import java.io.BufferedReader;
-import java.io.BufferedWriter;
-import java.io.FileReader;
-import java.io.FileWriter;
-import java.io.IOException;
-import java.util.ArrayList;
-import javax.swing.ImageIcon;
-import javax.swing.JOptionPane;
+import RyanProjectSea.ProjectGUI;   
+import java.io.BufferedReader;  //BufferedWriter import
+import java.io.BufferedWriter;  //BufferedWriter import
+import java.io.FileReader;  //FileReader import
+import java.io.FileWriter;  //FielWriter import
+import java.io.IOException; //IoException import
+import java.util.ArrayList; //Arraylist import
+import javax.swing.ImageIcon;   //ImageIcon import
+import javax.swing.JOptionPane; //joptionpane import
 
 /**
  *
@@ -29,9 +29,9 @@ public class SustainGUI extends javax.swing.JFrame {
      */
     public SustainGUI() {   //Constructor
         initComponents();   
-        result = new ArrayList<>();     
-        scoreList = new ArrayList<>();
-        imgLBL.setVisible(false);
+        result = new ArrayList<>();     //arraylist the show to the String result
+        scoreList = new ArrayList<>(); //arraylist to store the number score
+        imgLBL.setVisible(false);   //image is set to false when the page opens
     }
 
        
@@ -551,7 +551,7 @@ public class SustainGUI extends javax.swing.JFrame {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
-        titleLBL.setBackground(new java.awt.Color(0, 153, 153));
+        titleLBL.setBackground(new java.awt.Color(204, 204, 204));
         titleLBL.setFont(new java.awt.Font("Magneto", 1, 48)); // NOI18N
         titleLBL.setForeground(new java.awt.Color(0, 51, 153));
         titleLBL.setText("   Sustainability score");
@@ -588,49 +588,43 @@ public class SustainGUI extends javax.swing.JFrame {
 
     private void exitBTNActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_exitBTNActionPerformed
         // TODO add your handling code here:
-        System.exit(0);
+        System.exit(0); //exits the web page
     }//GEN-LAST:event_exitBTNActionPerformed
 
     private void homePageGUIActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_homePageGUIActionPerformed
         // TODO add your handling code here:
-        new SeaSaverHomeGUI().setVisible(true);
+        new SeaSaverHomeGUI().setVisible(true); //setting the homepage to visible
         
-        this.dispose();
+        this.dispose(); //page disappears when user exits the page
     }//GEN-LAST:event_homePageGUIActionPerformed
 
     private void infrographicGUIActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_infrographicGUIActionPerformed
         // TODO add your handling code here:
-        new ProjectGUI().setVisible(true);
+        new ProjectGUI().setVisible(true);  //infographic page set to visible
         
-        this.dispose();
+        this.dispose(); //page disappears when the user exits the page
     }//GEN-LAST:event_infrographicGUIActionPerformed
 
     private void displayBTNActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_displayBTNActionPerformed
         // TODO add your handling code here:
-        if(scoreList.isEmpty()){
-            JOptionPane.showMessageDialog(null, "No previous answers saved");
-            return;
+        if(scoreList.isEmpty()){    //is no data is stored in the scorelist array
+            JOptionPane.showMessageDialog(null, "No previous answers saved");   //this message will display
+            return; //return stops so nothing else runs
         }else{
-             StringBuffer allRecords = new StringBuffer();
-          for (ScoreRecord record : scoreList) {
-             allRecords.append("Name: ").append(record.getName()).append("\n");
+             StringBuffer allRecords = new StringBuffer();  
+          for (ScoreRecord record : scoreList) {    //for each record saved you add the users name to the output
+             allRecords.append("Name: ").append(record.getName()).append("\n"); //gets the stored answers
                      ArrayList<String> answers = record.getAnswers();
-          for (int i = 0; i < answers.size(); i++) {
+          for (int i = 0; i < answers.size(); i++) {    //loops through the 5 answers and displays them
               allRecords.append("Q").append(i + 1).append(": ").append(answers.get(i)).append("\n");
             }
                  allRecords.append("\n");
             }
 
-        JOptionPane.showMessageDialog(null, allRecords.toString());
-            for(int i = 0 ; i < scoreList.size(); i++){
-                ScoreRecord record = scoreList.get(i);
-            JOptionPane.showMessageDialog(null, "name"  + nameTF.getName() + "\n " + "Previous Answers:" + "\n" + "Q1: " + result.get(0) + "\n" +
-            "Q2: " + result.get(1) + "\n" + "Q3: " + result.get(2) + "\n" + "Q4: " + result.get(3) + "\n" +
-            "Q5: " + result.get(4));
-            }
-             try (BufferedReader reader = new BufferedReader(new FileReader("output.txt"))) {
-                 String line;
-             while ((line = reader.readLine()) != null) {
+        JOptionPane.showMessageDialog(null, allRecords.toString()); //dispalys all the stored data 
+             try (BufferedReader reader = new BufferedReader(new FileReader("output.txt"))) { //Reads file called output.txt
+                 String line;   
+             while ((line = reader.readLine()) != null) {   //reads every line
                   System.out.println(line); 
              }
              } catch (IOException e) {
@@ -641,27 +635,27 @@ public class SustainGUI extends javax.swing.JFrame {
 
     private void tryAgainBTNActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tryAgainBTNActionPerformed
         // TODO add your handling code here:
-        buttonGroup1.clearSelection();
+        buttonGroup1.clearSelection();  
         buttonGroup2.clearSelection();
         buttonGroup3.clearSelection();
         buttonGroup4.clearSelection();
-        buttonGroup5.clearSelection();
-        nameTF.setText("");
-        scoreTA.setText("");
-        imgLBL.setIcon(null);
+        buttonGroup5.clearSelection();  //When the user trys again the buttons are reset
+        nameTF.setText("");     //name is reset
+        scoreTA.setText("");    //test area reset
+        imgLBL.setIcon(null);   //image is reset
 
     }//GEN-LAST:event_tryAgainBTNActionPerformed
 
     private void submitBTNActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_submitBTNActionPerformed
         // TODO add your handling code here:
         String name = nameTF.getText();
-        if(name.isEmpty()){
+        if(name.isEmpty()){ //if no name is entered by the user the text will display below
             JOptionPane.showMessageDialog(null, "Error, please enter your name");
-            return;
+            return; 
         }
-        scoreList.add(new ScoreRecord(name, new ArrayList<>(result)));
+        scoreList.add(new ScoreRecord(name, new ArrayList<>(result)));  //creates new scoreRecord object and stores scoreRecord inside scorelist
         
-         result.clear();
+         result.clear();    //removes the old answers
         if (q1YES.isSelected()) {
            result.add("Yes");
         } else {
@@ -690,43 +684,43 @@ public class SustainGUI extends javax.swing.JFrame {
             result.add("Yes");
         } else {
             result.add("No");
-        }
+        }       //repeats from question 1 - 5 , if selected the answer is yes else the answer is no
         
-        String output = calc.submitAnswers(result);
+        String output = calc.submitAnswers(result); //sedns the answers to the calculaltions class
         
-        scoreTA.setText(output);
-        String message = calc.getResultMessage();
+        scoreTA.setText(output);        //retrieves back a score message
+        String message = calc.getResultMessage();   //stores the message 
         
     String image = "";
-    if (message.equals("Excellent")) {
-        imgLBL.setIcon(new ImageIcon(getClass().getResource("/excellence.png")));
-        imgLBL.setVisible(true);
+    if (message.equals("Excellent")) {  //based on the output text it will display the image based on the result
+        imgLBL.setIcon(new ImageIcon(getClass().getResource("/excellence.png")));//Converts the laoded image into an imageicon object 
+        imgLBL.setVisible(true);    //image is then set to true
     }
     else if (message.equals("Progressive")) {
-         imgLBL.setIcon(new ImageIcon(getClass().getResource("/like.png")));
+         imgLBL.setIcon(new ImageIcon(getClass().getResource("/like.png")));   //Accesses the images by using the .getResource method
          imgLBL.setVisible(true);
     }
     else if (message.equals("Alarming")) {
-        imgLBL.setIcon(new ImageIcon(getClass().getResource("/alarm.png")));
+        imgLBL.setIcon(new ImageIcon(getClass().getResource("/alarm.png")));    //setIcon replaces exisiting text in the image
         imgLBL.setVisible(true);
     }
     else {
-         imgLBL.setIcon(null);  
+         imgLBL.setIcon(null);  //no image will appear if no text result is displayed
     }
     
     
-    try (BufferedWriter writer = new BufferedWriter(new FileWriter("output.txt", true))) {
+    try (BufferedWriter writer = new BufferedWriter(new FileWriter("output.txt", true))) {  //creates a folder called output.txt
         writer.write("Name: " + name);
         writer.newLine();
 
     for (String ans : result) {
-        writer.write(ans);
-        writer.newLine();
+        writer.write(ans);  //writes the 5 answers
+        writer.newLine();   //line break
     }
-         writer.close();
+         writer.close();    //saves the data 
 
     } catch (IOException e) {
-        System.out.println("An error occurred" + e);
+        System.out.println("An error occurred" + e);        
     }
     
     
@@ -748,21 +742,21 @@ public class SustainGUI extends javax.swing.JFrame {
     private void searchBTNActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_searchBTNActionPerformed
         // TODO add your handling code here:
            String searchName = JOptionPane.showInputDialog(null, "Enter the name you want to search");
-            boolean nameFound = false;
-          if (searchName.isEmpty()) {
-               return;
+            boolean nameFound = false; 
+          if (searchName.isEmpty()) { //if search is empty displays nothing
+               return;  
           }
         for(int i = 0; i < scoreList.size(); i++) {
-                ScoreRecord record = scoreList.get(i);
+                ScoreRecord record = scoreList.get(i);  //loops through the scoreList
 
-        if (record.getName().equalsIgnoreCase(searchName)) {
-            JOptionPane.showMessageDialog(null, record.toString());
-            nameFound = true;
+        if (record.getName().equalsIgnoreCase(searchName)) {    //if the name stored is the same as the name searched
+            JOptionPane.showMessageDialog(null, record.toString()); //displays the name and data
+            nameFound = true; 
             
                  }
             }
             if (!nameFound) {
-                JOptionPane.showMessageDialog(null, "This name is not saved  in our files");
+                JOptionPane.showMessageDialog(null, "This name is not saved  in our files"); //if name is not found this will display
              }
 
        
@@ -772,17 +766,17 @@ public class SustainGUI extends javax.swing.JFrame {
     private void deleteBTNActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_deleteBTNActionPerformed
         // TODO add your handling code here:
        String nameDelete = JOptionPane.showInputDialog(null, "Enter a name to delete");
-       if(nameDelete.isEmpty()){
+       if(nameDelete.isEmpty()){    //if Delete button is empty returns nothing 
            return;
        }
-        for(int i = 0; i < scoreList.size(); i++){
-            ScoreRecord score = scoreList.get(i);
-            if(score.getName().equalsIgnoreCase(nameDelete)){
-                scoreList.remove(i);
-                JOptionPane.showMessageDialog(null, "Record for " + nameDelete + ", has been deleted");
+        for(int i = 0; i < scoreList.size(); i++){  //loops though the scoreList
+            ScoreRecord score = scoreList.get(i);   //goes to position i index and return the value i stored in scoreList and stores it in score
+            if(score.getName().equalsIgnoreCase(nameDelete)){   //if the name stored is equal to the name displayed to delete by the user
+                scoreList.remove(i);    //Then the name is removed from the scoreList arrayList
+                JOptionPane.showMessageDialog(null, "Record for " + nameDelete + ", has been deleted"); //displays the message when name is deleted
                 return;
             }else{
-                JOptionPane.showMessageDialog(null, "No record of " + nameDelete + ", has been recorded");
+                JOptionPane.showMessageDialog(null, "No record of " + nameDelete + ", has been recorded"); //if name does not match this will display 
             }
         }
                 

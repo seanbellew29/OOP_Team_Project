@@ -11,7 +11,7 @@ import java.util.ArrayList;
  * @author Seán
  */
     public class ScoreRecord{
-     String name;
+     private String name;
      ArrayList<String> answers;
      StringBuffer buff = new StringBuffer();
 
