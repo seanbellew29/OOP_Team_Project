@@ -5,9 +5,6 @@
 package LoginPage;
 import HomePage.SeaSaverHomeGUI;
 import LoginPage.SignupGUI;
-import java.io.BufferedReader;
-import java.io.FileReader;
-import java.io.IOException;
 import javax.swing.JOptionPane;
 
 
@@ -156,29 +153,14 @@ public class LoginPageGUI extends javax.swing.JFrame {
 
     private void loginBTNActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_loginBTNActionPerformed
         // TODO add your handling code here:
-        String username = usernameTF.getText();
-        String password = String.valueOf(passwordTF.getPassword());
+        String username = usernameTF.getText(); //retrieves the text
+        String password = String.valueOf(passwordTF.getPassword()); //password field hides the users password
         
-        String savedLogin = username + "," + password;
-        boolean correctPass = false;
-       try(BufferedReader read = new BufferedReader(new FileReader("signup.txt"))){ //Reads file called signup.txt 
-        String line;
-         while((line = read.readLine()) != null){
-             if(line.equals(savedLogin)){   //if the log in is the same as the text in the file then password and username is correct
-                 correctPass = true;
-             }
-            }
-        }catch(IOException e){
-            JOptionPane.showMessageDialog(null, "Error Reading to the file");
-        }
-        if(correctPass){
-            JOptionPane.showMessageDialog(null, "Login Successful");    //will display when Username and Password matches the singup file
+        LoginPage user = new LoginPage(username, password); //creates a new object called user and passes the info into it 
+        user.confirm(); //the method
         
-        new SeaSaverHomeGUI().setVisible(true); //sets the home page visible 
-        this.dispose(); //log in page disappears after the homepage is displayed
-        }else{
-            JOptionPane.showMessageDialog(null, "Invalid credentials");//invalid username or password will display this message
-        }
+         this.dispose(); //log in page disappears after the homepage is displayed
+        
     }//GEN-LAST:event_loginBTNActionPerformed
 
     private void signupBTNActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_signupBTNActionPerformed

@@ -182,26 +182,19 @@ public class SignupGUI extends javax.swing.JFrame {
 
     private void confirmBTNActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_confirmBTNActionPerformed
         // TODO add your handling code here:
-            String username = usernameTF.getText();
-            String password = String.valueOf(passwordTF.getPassword()); 
+            String username = usernameTF.getText(); ////retrieves the text
+            String password = String.valueOf(passwordTF.getPassword()); //password field hides the users password
 
+            Signup userSign = new Signup(username, password);   //creates a new object called userSign and passes the info into it 
+            userSign.confirm(); //Method
  
-    if (username.isEmpty() || password.isEmpty()) {
+    if (username.isEmpty() || password.isEmpty()) {     //if the username or password is empty it will return this display message
         JOptionPane.showMessageDialog(null, "Please fill all fields!");
         return;
     }
 
-    
-    try (BufferedWriter writer = new BufferedWriter(new FileWriter("signup.txt", true))) {
-        writer.write(username + "," + password);
-        writer.newLine();
-    } catch (IOException e) {
-        JOptionPane.showMessageDialog(null, "Error writing to file.");
-        return;
-    }
-
    
-    JOptionPane.showMessageDialog(null, "Your account has been successfully created");
+   
              
 
     }//GEN-LAST:event_confirmBTNActionPerformed
