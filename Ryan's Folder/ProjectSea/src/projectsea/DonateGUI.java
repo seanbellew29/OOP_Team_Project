@@ -301,6 +301,7 @@ public class DonateGUI extends javax.swing.JFrame {
 
     private void gobckBTNActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_gobckBTNActionPerformed
         // TODO add your handling code here:
+        //brings you back to the main infographic page
         new ProjectGUI().setVisible(true);
         this.dispose();
     }//GEN-LAST:event_gobckBTNActionPerformed
@@ -357,12 +358,13 @@ public class DonateGUI extends javax.swing.JFrame {
 
     private void amountBTNActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_amountBTNActionPerformed
         // TODO add your handling code here:
-        
+        //shows only the total a ount raised 
         amountTA.setText("Total Raised: €" + totalRaised);
     }//GEN-LAST:event_amountBTNActionPerformed
 
     private void deleteBTNActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_deleteBTNActionPerformed
         // TODO add your handling code here:
+        //if no donation has been added stop this method 
         if (donationAmounts.isEmpty()) {
             JOptionPane.showMessageDialog(null, "No donations to delete.");
             return;
@@ -371,12 +373,15 @@ public class DonateGUI extends javax.swing.JFrame {
         // Remove the last donation
         lastAmount = donationAmounts.remove(donationAmounts.size() - 1);
         donationReasons.remove(donationReasons.size() - 1);
-
+        
+        //subtract the most recent donation amount from total raised 
         totalRaised -= lastAmount;
 
-        // Rebuild the text area
+        // clear display and rebuilt the lsit of donations 
         amountTA.setText("");
+        //loops through all remaining donations after one is deleted 
         for (int i = 0; i < donationAmounts.size(); i++) {
+            //readds each donation to the text area
             amountTA.append("€" + donationAmounts.get(i) + " - " + donationReasons.get(i) + "\n");
         }
 
