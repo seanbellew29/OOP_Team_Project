@@ -56,8 +56,6 @@ public class DonateGUI extends javax.swing.JFrame {
 
         headerPNL = new javax.swing.JPanel();
         titleLBL = new javax.swing.JLabel();
-        IMG = new javax.swing.JLabel();
-        IMG2 = new javax.swing.JLabel();
         donationPNL = new javax.swing.JPanel();
         amountLBL = new javax.swing.JLabel();
         reasonLBL = new javax.swing.JLabel();
@@ -70,6 +68,8 @@ public class DonateGUI extends javax.swing.JFrame {
         deleteBTN = new javax.swing.JButton();
         gobckPNL = new javax.swing.JPanel();
         gobckBTN = new javax.swing.JButton();
+        happysesaIMG = new javax.swing.JLabel();
+        beachCleanUpMG = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -97,12 +97,6 @@ public class DonateGUI extends javax.swing.JFrame {
                 .addComponent(titleLBL)
                 .addContainerGap(38, Short.MAX_VALUE))
         );
-
-        IMG.setIcon(new javax.swing.ImageIcon("C:\\Users\\ryanl\\OneDrive\\Pictures\\Screenshots\\SMALL beach clean up.png")); // NOI18N
-        IMG.setText("jLabel2");
-
-        IMG2.setIcon(new javax.swing.ImageIcon("C:\\Users\\ryanl\\OneDrive\\Pictures\\Screenshots\\happy sea.png")); // NOI18N
-        IMG2.setText("jLabel1");
 
         donationPNL.setBackground(new java.awt.Color(0, 51, 204));
 
@@ -190,7 +184,7 @@ public class DonateGUI extends javax.swing.JFrame {
                                 .addGap(44, 44, 44)
                                 .addComponent(amountBTN)))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)))
+                        .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 211, Short.MAX_VALUE)))
                 .addContainerGap())
         );
         donationPNLLayout.setVerticalGroup(
@@ -206,7 +200,7 @@ public class DonateGUI extends javax.swing.JFrame {
                     .addComponent(reasonLBL))
                 .addGroup(donationPNLLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(donationPNLLayout.createSequentialGroup()
-                        .addGap(18, 54, Short.MAX_VALUE)
+                        .addGap(18, 18, Short.MAX_VALUE)
                         .addGroup(donationPNLLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(amountBTN)
                             .addComponent(donateBTN))
@@ -215,7 +209,7 @@ public class DonateGUI extends javax.swing.JFrame {
                         .addGap(22, 22, 22))
                     .addGroup(donationPNLLayout.createSequentialGroup()
                         .addGap(18, 18, 18)
-                        .addComponent(jScrollPane1)
+                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
                         .addContainerGap())))
         );
 
@@ -245,8 +239,14 @@ public class DonateGUI extends javax.swing.JFrame {
             .addGroup(gobckPNLLayout.createSequentialGroup()
                 .addGap(33, 33, 33)
                 .addComponent(gobckBTN, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(34, Short.MAX_VALUE))
+                .addContainerGap(10, Short.MAX_VALUE))
         );
+
+        happysesaIMG.setIcon(new javax.swing.ImageIcon(getClass().getResource("/projectsea/happy sea.png"))); // NOI18N
+        happysesaIMG.setText("jLabel1");
+
+        beachCleanUpMG.setIcon(new javax.swing.ImageIcon(getClass().getResource("/projectsea/SMALL beach clean up.png"))); // NOI18N
+        beachCleanUpMG.setText("jLabel1");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -255,20 +255,14 @@ public class DonateGUI extends javax.swing.JFrame {
             .addComponent(headerPNL, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(12, 12, 12)
-                        .addComponent(IMG, javax.swing.GroupLayout.PREFERRED_SIZE, 458, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addComponent(donationPNL, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(IMG2, javax.swing.GroupLayout.PREFERRED_SIZE, 462, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(19, 19, 19))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(18, 18, 18)
-                        .addComponent(gobckPNL, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addContainerGap(33, Short.MAX_VALUE))))
+                    .addComponent(beachCleanUpMG, javax.swing.GroupLayout.PREFERRED_SIZE, 461, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(donationPNL, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 24, Short.MAX_VALUE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(happysesaIMG, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 456, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(gobckPNL, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap())
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -278,14 +272,13 @@ public class DonateGUI extends javax.swing.JFrame {
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addComponent(IMG)
+                        .addComponent(beachCleanUpMG)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(donationPNL, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                     .addGroup(layout.createSequentialGroup()
-                        .addComponent(IMG2)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(gobckPNL, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addGap(6, 6, 6)))
+                        .addComponent(happysesaIMG)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(gobckPNL, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
                 .addContainerGap())
         );
 
@@ -422,17 +415,17 @@ public class DonateGUI extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JLabel IMG;
-    private javax.swing.JLabel IMG2;
     private javax.swing.JButton amountBTN;
     private javax.swing.JLabel amountLBL;
     private javax.swing.JTextArea amountTA;
     private javax.swing.JTextField amountTF;
+    private javax.swing.JLabel beachCleanUpMG;
     private javax.swing.JButton deleteBTN;
     private javax.swing.JButton donateBTN;
     private javax.swing.JPanel donationPNL;
     private javax.swing.JButton gobckBTN;
     private javax.swing.JPanel gobckPNL;
+    private javax.swing.JLabel happysesaIMG;
     private javax.swing.JPanel headerPNL;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JLabel reasonLBL;

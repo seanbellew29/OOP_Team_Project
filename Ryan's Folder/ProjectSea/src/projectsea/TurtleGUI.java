@@ -30,12 +30,12 @@ public class TurtleGUI extends javax.swing.JFrame {
 
         titlePNL = new javax.swing.JPanel();
         titleLBL = new javax.swing.JLabel();
-        turtleIMG = new javax.swing.JLabel();
         gobackPNL = new javax.swing.JPanel();
         gobackBTN = new javax.swing.JButton();
         factsPNL = new javax.swing.JPanel();
         jScrollPane1 = new javax.swing.JScrollPane();
         jTextArea1 = new javax.swing.JTextArea();
+        jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -63,9 +63,6 @@ public class TurtleGUI extends javax.swing.JFrame {
                 .addComponent(titleLBL)
                 .addGap(28, 28, 28))
         );
-
-        turtleIMG.setIcon(new javax.swing.ImageIcon("C:\\Users\\ryanl\\OneDrive\\Pictures\\Screenshots\\turtle rubish.png")); // NOI18N
-        turtleIMG.setText("jLabel2");
 
         gobackPNL.setBackground(new java.awt.Color(0, 51, 204));
 
@@ -122,6 +119,9 @@ public class TurtleGUI extends javax.swing.JFrame {
                 .addContainerGap(43, Short.MAX_VALUE))
         );
 
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/projectsea/turtle rubish.png"))); // NOI18N
+        jLabel1.setText("jLabel1");
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -132,7 +132,7 @@ public class TurtleGUI extends javax.swing.JFrame {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
                         .addGap(6, 6, 6)
-                        .addComponent(turtleIMG, javax.swing.GroupLayout.PREFERRED_SIZE, 537, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 537, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(factsPNL, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addContainerGap())
@@ -147,8 +147,8 @@ public class TurtleGUI extends javax.swing.JFrame {
                 .addComponent(gobackPNL, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(turtleIMG)
-                    .addComponent(factsPNL, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(factsPNL, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel1))
                 .addGap(0, 6, Short.MAX_VALUE))
         );
 
@@ -191,10 +191,10 @@ public class TurtleGUI extends javax.swing.JFrame {
     private javax.swing.JPanel factsPNL;
     private javax.swing.JButton gobackBTN;
     private javax.swing.JPanel gobackPNL;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTextArea jTextArea1;
     private javax.swing.JLabel titleLBL;
     private javax.swing.JPanel titlePNL;
-    private javax.swing.JLabel turtleIMG;
     // End of variables declaration//GEN-END:variables
 }
