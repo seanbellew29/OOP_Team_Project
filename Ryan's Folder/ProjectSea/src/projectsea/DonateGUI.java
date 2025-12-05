@@ -108,11 +108,11 @@ public class DonateGUI extends javax.swing.JFrame {
         amountLBL.setBackground(new java.awt.Color(153, 255, 255));
         amountLBL.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         amountLBL.setForeground(new java.awt.Color(204, 255, 255));
-        amountLBL.setText("AMOUNT");
+        amountLBL.setText("AMOUNT :");
 
         reasonLBL.setFont(new java.awt.Font("Segoe UI", 3, 12)); // NOI18N
         reasonLBL.setForeground(new java.awt.Color(204, 255, 255));
-        reasonLBL.setText("REASON");
+        reasonLBL.setText("REASON AND NAME :");
 
         amountTF.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -167,50 +167,55 @@ public class DonateGUI extends javax.swing.JFrame {
             .addGroup(donationPNLLayout.createSequentialGroup()
                 .addGroup(donationPNLLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(donationPNLLayout.createSequentialGroup()
-                        .addGap(48, 48, 48)
-                        .addComponent(deleteBTN)
-                        .addGap(105, 105, 105)
-                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGroup(donationPNLLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(donationPNLLayout.createSequentialGroup()
+                                .addContainerGap()
+                                .addComponent(reasonLBL, javax.swing.GroupLayout.PREFERRED_SIZE, 138, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(donationPNLLayout.createSequentialGroup()
+                                .addGap(34, 34, 34)
+                                .addComponent(amountLBL, javax.swing.GroupLayout.PREFERRED_SIZE, 62, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(donationPNLLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(amountTF, javax.swing.GroupLayout.PREFERRED_SIZE, 246, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(reasonTF, javax.swing.GroupLayout.PREFERRED_SIZE, 246, javax.swing.GroupLayout.PREFERRED_SIZE)))
                     .addGroup(donationPNLLayout.createSequentialGroup()
                         .addGroup(donationPNLLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(donationPNLLayout.createSequentialGroup()
-                                .addGap(31, 31, 31)
-                                .addComponent(reasonLBL, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addGap(48, 48, 48)
+                                .addComponent(deleteBTN))
                             .addGroup(donationPNLLayout.createSequentialGroup()
                                 .addGap(15, 15, 15)
-                                .addComponent(donateBTN))
-                            .addGroup(donationPNLLayout.createSequentialGroup()
-                                .addGap(31, 31, 31)
-                                .addComponent(amountLBL, javax.swing.GroupLayout.PREFERRED_SIZE, 62, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                        .addGap(21, 21, 21)
-                        .addGroup(donationPNLLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(amountTF, javax.swing.GroupLayout.PREFERRED_SIZE, 246, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(amountBTN)
-                            .addComponent(reasonTF, javax.swing.GroupLayout.PREFERRED_SIZE, 246, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                                .addComponent(donateBTN)
+                                .addGap(44, 44, 44)
+                                .addComponent(amountBTN)))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)))
+                .addContainerGap())
         );
         donationPNLLayout.setVerticalGroup(
             donationPNLLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(donationPNLLayout.createSequentialGroup()
-                .addGap(54, 54, 54)
+                .addGap(38, 38, 38)
                 .addGroup(donationPNLLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(amountLBL, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(amountTF, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(amountTF, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(amountLBL, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(57, 57, 57)
                 .addGroup(donationPNLLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(reasonLBL)
-                    .addComponent(reasonTF, javax.swing.GroupLayout.PREFERRED_SIZE, 47, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
+                    .addComponent(reasonTF, javax.swing.GroupLayout.PREFERRED_SIZE, 47, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(reasonLBL))
                 .addGroup(donationPNLLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(donationPNLLayout.createSequentialGroup()
-                        .addGap(0, 0, Short.MAX_VALUE)
+                        .addGap(18, 54, Short.MAX_VALUE)
                         .addGroup(donationPNLLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(amountBTN)
                             .addComponent(donateBTN))
                         .addGap(18, 18, 18)
-                        .addComponent(deleteBTN))
-                    .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE))
-                .addGap(22, 22, 22))
+                        .addComponent(deleteBTN)
+                        .addGap(22, 22, 22))
+                    .addGroup(donationPNLLayout.createSequentialGroup()
+                        .addGap(18, 18, 18)
+                        .addComponent(jScrollPane1)
+                        .addContainerGap())))
         );
 
         gobckPNL.setBackground(new java.awt.Color(0, 51, 204));

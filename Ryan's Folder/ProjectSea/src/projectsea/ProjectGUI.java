@@ -16,7 +16,7 @@ public class ProjectGUI extends javax.swing.JFrame {
     private double avg;
     private int total,rating;
     private String input;
-    private ArrayList<Integer> ratings = new ArrayList<>();
+    private ArrayList<Integer> ratings;
 
 
     /**
@@ -24,6 +24,8 @@ public class ProjectGUI extends javax.swing.JFrame {
      */
     public ProjectGUI() {
         initComponents();
+        ratings = new ArrayList<>();
+
     }
 
     /**
@@ -394,7 +396,7 @@ public class ProjectGUI extends javax.swing.JFrame {
                 total += r;
             }
             avg = (double) total / ratings.size();
-            JOptionPane.showMessageDialog(null,"Thank you!\nCurrent Average Rating: " + String.format("%.2f", avg));
+            JOptionPane.showMessageDialog(null,"Thank you!\nCurrent Average Rating: " + String.format("%.2f", avg));//puts the donation to 2 decimal places
                  
         } catch (NumberFormatException e) {
             JOptionPane.showMessageDialog(null,"Please enter a valid number.");
