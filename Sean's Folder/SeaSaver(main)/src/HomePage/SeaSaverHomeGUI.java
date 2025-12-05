@@ -2,6 +2,7 @@ package HomePage;
 
 import seasaver.SustainGUI;
 import RyanProjectSea.ProjectGUI;
+import LoginPage.LoginPageGUI;
 
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
@@ -32,26 +33,24 @@ public class SeaSaverHomeGUI extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        titleLBL = new javax.swing.JLabel();
         jPanel1 = new javax.swing.JPanel();
         scoreBTN = new javax.swing.JButton();
         infographicBTN = new javax.swing.JButton();
         quizBTN = new javax.swing.JButton();
         exitBTN = new javax.swing.JButton();
+        goBackBTN = new javax.swing.JButton();
         jPanel2 = new javax.swing.JPanel();
         imgLBL = new javax.swing.JLabel();
+        jPanel3 = new javax.swing.JPanel();
+        titleLBL = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setBackground(new java.awt.Color(0, 153, 0));
 
-        titleLBL.setBackground(new java.awt.Color(0, 204, 204));
-        titleLBL.setFont(new java.awt.Font("Tempus Sans ITC", 1, 48)); // NOI18N
-        titleLBL.setText("      Sea Saver");
-
-        jPanel1.setBackground(new java.awt.Color(0, 153, 153));
+        jPanel1.setBackground(new java.awt.Color(0, 0, 255));
 
         scoreBTN.setBackground(new java.awt.Color(204, 204, 204));
-        scoreBTN.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        scoreBTN.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         scoreBTN.setText("Sustainability score");
         scoreBTN.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
         scoreBTN.addActionListener(new java.awt.event.ActionListener() {
@@ -61,7 +60,7 @@ public class SeaSaverHomeGUI extends javax.swing.JFrame {
         });
 
         infographicBTN.setBackground(new java.awt.Color(204, 204, 204));
-        infographicBTN.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        infographicBTN.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         infographicBTN.setText("Infographic");
         infographicBTN.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
         infographicBTN.addActionListener(new java.awt.event.ActionListener() {
@@ -71,12 +70,12 @@ public class SeaSaverHomeGUI extends javax.swing.JFrame {
         });
 
         quizBTN.setBackground(new java.awt.Color(204, 204, 204));
-        quizBTN.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        quizBTN.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         quizBTN.setText("Quiz");
         quizBTN.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
 
         exitBTN.setBackground(new java.awt.Color(204, 204, 204));
-        exitBTN.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        exitBTN.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         exitBTN.setText("Leave");
         exitBTN.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
         exitBTN.addActionListener(new java.awt.event.ActionListener() {
@@ -85,19 +84,31 @@ public class SeaSaverHomeGUI extends javax.swing.JFrame {
             }
         });
 
+        goBackBTN.setBackground(new java.awt.Color(204, 204, 204));
+        goBackBTN.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        goBackBTN.setText("<<Go Back");
+        goBackBTN.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        goBackBTN.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                goBackBTNActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGap(16, 16, 16)
                 .addComponent(scoreBTN)
-                .addGap(18, 18, 18)
-                .addComponent(infographicBTN)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(infographicBTN, javax.swing.GroupLayout.PREFERRED_SIZE, 115, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(28, 28, 28)
                 .addComponent(quizBTN, javax.swing.GroupLayout.PREFERRED_SIZE, 79, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
-                .addComponent(exitBTN)
+                .addComponent(goBackBTN, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(exitBTN, javax.swing.GroupLayout.PREFERRED_SIZE, 83, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
         jPanel1Layout.setVerticalGroup(
@@ -108,7 +119,8 @@ public class SeaSaverHomeGUI extends javax.swing.JFrame {
                     .addComponent(scoreBTN, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(infographicBTN, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(quizBTN, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(exitBTN, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(exitBTN, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(goBackBTN, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
@@ -124,32 +136,59 @@ public class SeaSaverHomeGUI extends javax.swing.JFrame {
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(imgLBL, javax.swing.GroupLayout.PREFERRED_SIZE, 334, Short.MAX_VALUE)
+            .addComponent(imgLBL, javax.swing.GroupLayout.Alignment.TRAILING)
+        );
+
+        jPanel3.setBackground(new java.awt.Color(153, 153, 153));
+
+        titleLBL.setBackground(new java.awt.Color(0, 204, 204));
+        titleLBL.setFont(new java.awt.Font("Stencil", 1, 48)); // NOI18N
+        titleLBL.setForeground(new java.awt.Color(0, 0, 255));
+        titleLBL.setText("      Sea Saver");
+
+        javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
+        jPanel3.setLayout(jPanel3Layout);
+        jPanel3Layout.setHorizontalGroup(
+            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel3Layout.createSequentialGroup()
+                .addGap(200, 200, 200)
+                .addComponent(titleLBL, javax.swing.GroupLayout.PREFERRED_SIZE, 337, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(250, Short.MAX_VALUE))
+        );
+        jPanel3Layout.setVerticalGroup(
+            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
+                .addContainerGap(19, Short.MAX_VALUE)
+                .addComponent(titleLBL)
+                .addGap(17, 17, 17))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addGap(0, 34, Short.MAX_VALUE)
+                .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
             .addGroup(layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addComponent(titleLBL, javax.swing.GroupLayout.PREFERRED_SIZE, 303, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addGap(98, 98, 98)
                         .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap())
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(52, 52, 52)
+                        .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addContainerGap(11, Short.MAX_VALUE)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(titleLBL)
-                    .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(63, Short.MAX_VALUE))
         );
 
         pack();
@@ -174,6 +213,12 @@ public class SeaSaverHomeGUI extends javax.swing.JFrame {
         
         this.dispose();
     }//GEN-LAST:event_scoreBTNActionPerformed
+
+    private void goBackBTNActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_goBackBTNActionPerformed
+        // TODO add your handling code here:
+        new LoginPageGUI().setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_goBackBTNActionPerformed
 
     /**
      * @param args the command line arguments
@@ -202,10 +247,12 @@ public class SeaSaverHomeGUI extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton exitBTN;
+    private javax.swing.JButton goBackBTN;
     private javax.swing.JLabel imgLBL;
     private javax.swing.JButton infographicBTN;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
+    private javax.swing.JPanel jPanel3;
     private javax.swing.JButton quizBTN;
     private javax.swing.JButton scoreBTN;
     private javax.swing.JLabel titleLBL;

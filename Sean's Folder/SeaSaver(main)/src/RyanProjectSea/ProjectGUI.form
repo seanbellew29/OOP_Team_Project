@@ -26,19 +26,14 @@
   <Layout>
     <DimensionLayout dim="0">
       <Group type="103" groupAlignment="0" attributes="0">
-          <Group type="102" attributes="0">
-              <EmptySpace max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="0" attributes="0">
-                  <Group type="102" attributes="0">
+          <Group type="102" alignment="0" attributes="0">
+              <EmptySpace max="32767" attributes="0"/>
+              <Group type="103" groupAlignment="1" attributes="0">
+                  <Component id="jPanel2" alignment="1" min="-2" pref="926" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" max="-2" attributes="0">
                       <Component id="titlePNL" max="32767" attributes="0"/>
-                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="menuPNL" max="32767" attributes="0"/>
                   </Group>
-                  <Group type="102" alignment="1" attributes="0">
-                      <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
-                      <Component id="jPanel2" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace min="-2" pref="20" max="-2" attributes="0"/>
-                  </Group>
-                  <Component id="menuPNL" max="32767" attributes="0"/>
               </Group>
           </Group>
       </Group>
@@ -46,13 +41,12 @@
     <DimensionLayout dim="1">
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" alignment="0" attributes="0">
-              <EmptySpace max="-2" attributes="0"/>
+              <EmptySpace max="32767" attributes="0"/>
               <Component id="titlePNL" min="-2" max="-2" attributes="0"/>
               <EmptySpace max="-2" attributes="0"/>
               <Component id="menuPNL" min="-2" max="-2" attributes="0"/>
               <EmptySpace max="-2" attributes="0"/>
-              <Component id="jPanel2" max="32767" attributes="0"/>
-              <EmptySpace max="-2" attributes="0"/>
+              <Component id="jPanel2" min="-2" max="-2" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -76,10 +70,10 @@
       <Layout>
         <DimensionLayout dim="0">
           <Group type="103" groupAlignment="0" attributes="0">
-              <Group type="102" alignment="0" attributes="0">
-                  <EmptySpace min="-2" pref="443" max="-2" attributes="0"/>
-                  <Component id="titleLBL" min="-2" max="-2" attributes="0"/>
+              <Group type="102" alignment="1" attributes="0">
                   <EmptySpace max="32767" attributes="0"/>
+                  <Component id="titleLBL" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace min="-2" pref="232" max="-2" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
@@ -105,7 +99,7 @@
             <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="cc" green="0" red="0" type="rgb"/>
             </Property>
-            <Property name="text" type="java.lang.String" value="Sea life INfograpgic"/>
+            <Property name="text" type="java.lang.String" value="Sea life INfographic"/>
             <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
               <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
                 <LineBorder/>
@@ -120,13 +114,10 @@
       <Layout>
         <DimensionLayout dim="0">
           <Group type="103" groupAlignment="0" attributes="0">
-              <Group type="102" attributes="0">
-                  <EmptySpace max="-2" attributes="0"/>
-                  <Group type="103" groupAlignment="0" attributes="0">
-                      <Component id="bodyPNL" max="32767" attributes="0"/>
-                      <Component id="ratePNL" max="32767" attributes="0"/>
-                  </Group>
-                  <EmptySpace max="-2" attributes="0"/>
+              <Group type="102" alignment="1" attributes="0">
+                  <EmptySpace max="32767" attributes="0"/>
+                  <Component id="bodyPNL" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace min="-2" pref="203" max="-2" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
@@ -135,7 +126,6 @@
               <Group type="102" alignment="0" attributes="0">
                   <Component id="bodyPNL" min="-2" max="-2" attributes="0"/>
                   <EmptySpace max="32767" attributes="0"/>
-                  <Component id="ratePNL" min="-2" max="-2" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
@@ -162,36 +152,38 @@
             <DimensionLayout dim="0">
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" attributes="0">
-                      <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
-                      <Component id="jScrollPane1" min="-2" pref="1006" max="-2" attributes="0"/>
+                      <EmptySpace pref="16" max="32767" attributes="0"/>
+                      <Component id="jScrollPane1" min="-2" pref="529" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <Group type="102" alignment="0" attributes="0">
-                              <EmptySpace min="-2" pref="39" max="-2" attributes="0"/>
-                              <Component id="jScrollPane2" pref="297" max="32767" attributes="0"/>
-                              <EmptySpace max="-2" attributes="0"/>
-                          </Group>
                           <Group type="102" attributes="0">
-                              <EmptySpace max="32767" attributes="0"/>
+                              <EmptySpace min="-2" pref="132" max="-2" attributes="0"/>
                               <Component id="donateBTN" min="-2" max="-2" attributes="0"/>
-                              <EmptySpace min="-2" pref="103" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace min="-2" pref="28" max="-2" attributes="0"/>
+                              <Component id="jScrollPane2" min="-2" pref="296" max="-2" attributes="0"/>
                           </Group>
                       </Group>
+                      <EmptySpace min="-2" pref="43" max="-2" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
             <DimensionLayout dim="1">
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Group type="102" attributes="0">
+                  <Group type="102" alignment="0" attributes="0">
                       <EmptySpace max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" attributes="0">
+                              <Component id="jScrollPane1" min="-2" pref="398" max="-2" attributes="0"/>
+                              <EmptySpace max="32767" attributes="0"/>
+                          </Group>
                           <Group type="102" attributes="0">
                               <Component id="donateBTN" min="-2" pref="39" max="-2" attributes="0"/>
-                              <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
                               <Component id="jScrollPane2" max="32767" attributes="0"/>
+                              <EmptySpace min="-2" pref="16" max="-2" attributes="0"/>
                           </Group>
-                          <Component id="jScrollPane1" min="-2" pref="486" max="-2" attributes="0"/>
                       </Group>
-                      <EmptySpace pref="18" max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -214,7 +206,7 @@
                       <Font name="Segoe UI" size="12" style="1"/>
                     </Property>
                     <Property name="rows" type="int" value="5"/>
-                    <Property name="text" type="java.lang.String" value="( Why Healthy Oceans Matter? )&#xa;A healthy ocean matters becasue it Produce 50% of Earth&#x2019;s oxygen, Regulate global climate,Support billions of people with food + jobs&#xa;Home to over 200,000 known marine species (and countless undiscovered ones).&#xa;&#xa;&#xa;( The Dark Side of Mass Fishing )&#xa;1. Overfishing -- Fish populations can&#x2019;t reproduce fast enough to recover and Some species (like bluefin tuna) have dropped by over 90% in certain regions.&#xa;2. Bycatch -- Dolphins, turtles, sharks, seabirds get caught in nets meant for other fish it is estimated that there is 38 million tonnes of bycatch annually.&#xa;3. Habitat Destruction -- Bottom trawling scrapes the seafloor, destroying coral and sponge forests this disrupts entire marine ecosystems.&#xa;&#xa;&#xa;( Plastic Pollution: A Slow-Motion Crisis )&#xa;1. The Plastic Numbers -- 11 million tonnes of plastic enter the ocean every year, Only 9% of global plastic is recycled.&#xa;2. Microplastics -- Plastics break down into fragments smaller than 5mm these microplasticsare found in fish, sea salt, drinking water and human blood.&#xa;3. Wildlife Harm -- Sea turtles mistake plastic bags for jellyfish, Seabirds ingest brightly colored plastic pieces, Entanglement kills seals, dolphins, whales, and more.&#xa;                                 if you would like to see more about wildlife harm you can click on the seacretures name above the infographic.&#xa;4. Ocean Garbage Patches -- The Great Pacific Garbage Patch = 1.6 million km2, Not an island more like a massive soup of microplastics and debris.&#xa;&#xa;&#xa;( So What We Can Do ? )&#xa;- Eat lower on the food chain (more plant-based meals &#x2192; reduces pressure on fisheries).&#xa;- Properly dispose of fishing gear to reduce &#x201c;ghost nets&#x201d; in oceans.&#xa;- Choose biodegradable or compostable alternatives when possible.&#xa;- Spread awareness through social media or local groups.&#xa;-  Avoid products made with microbeads (found in some exfoliators &amp; toothpastes).&#xa;-  Support marine-protected areas (MPAs) that allow ecosystems to recover.&#xa;- And you can donate to our team to help clean up beaches all over the world if your interested click on the donation page button and it will bring you to our teams donation page.&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;"/>
+                    <Property name="text" type="java.lang.String" value="( Why Healthy Oceans Matter? )&#xa;A healthy ocean matters becasue it Produce 50% of Earth&#x2019;s oxygen, Regulate global&#xa; climate,Support billions of people with food + jobs&#xa;Home to over 200,000 known marine species (and countless undiscovered ones).&#xa;&#xa;&#xa;( The Dark Side of Mass Fishing )&#xa;1. Overfishing -- Fish populations can&#x2019;t reproduce fast enough to recover and &#xa;Some species (like bluefin tuna) have dropped by over 90% in certain regions.&#xa;2. Bycatch -- Dolphins, turtles, sharks, seabirds get caught in nets meant for other &#xa;fish it is estimated that there is 38 million tonnes of bycatch annually.&#xa;3. Habitat Destruction -- Bottom trawling scrapes the seafloor, destroying coral and &#xa;sponge forests this disrupts entire marine ecosystems.&#xa;&#xa;&#xa;( Plastic Pollution: A Slow-Motion Crisis )&#xa;1. The Plastic Numbers -- 11 million tonnes of plastic enter the ocean every year,&#xa; Only 9% of global plastic is recycled.&#xa;2. Microplastics -- Plastics break down into fragments smaller than 5mm these &#xa;microplasticsare found in fish, sea salt, drinking water and human blood.&#xa;3. Wildlife Harm -- Sea turtles mistake plastic bags for jellyfish, Seabirds ingest brightly &#xa;colored plastic pieces, Entanglement kills seals, dolphins, whales, and more.&#xa;                                 if you would like to see more about wildlife harm you can click &#xa;on the seacretures name above the infographic.&#xa;4. Ocean Garbage Patches -- The Great Pacific Garbage Patch = 1.6 million km2,&#xa; Not an island more like a massive soup of microplastics and debris.&#xa;&#xa;&#xa;( So What We Can Do ? )&#xa;- Eat lower on the food chain (more plant-based meals &#x2192; reduces pressure on fisheries).&#xa;- Properly dispose of fishing gear to reduce &#x201c;ghost nets&#x201d; in oceans.&#xa;- Choose biodegradable or compostable alternatives when possible.&#xa;- Spread awareness through social media or local groups.&#xa;-  Avoid products made with microbeads (found in some exfoliators &amp; toothpastes).&#xa;-  Support marine-protected areas (MPAs) that allow ecosystems to recover.&#xa;- And you can donate to our team to help clean up beaches all over the world if&#xa; your interested click on the donation page button and it will bring you to our &#xa;teams donation page.&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;"/>
                   </Properties>
                 </Component>
               </SubComponents>
@@ -262,26 +254,6 @@
             </Component>
           </SubComponents>
         </Container>
-        <Container class="javax.swing.JPanel" name="ratePNL">
-          <Properties>
-            <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-              <Color blue="cc" green="33" red="0" type="rgb"/>
-            </Property>
-          </Properties>
-
-          <Layout>
-            <DimensionLayout dim="0">
-              <Group type="103" groupAlignment="0" attributes="0">
-                  <EmptySpace min="0" pref="1384" max="32767" attributes="0"/>
-              </Group>
-            </DimensionLayout>
-            <DimensionLayout dim="1">
-              <Group type="103" groupAlignment="0" attributes="0">
-                  <EmptySpace min="0" pref="100" max="32767" attributes="0"/>
-              </Group>
-            </DimensionLayout>
-          </Layout>
-        </Container>
       </SubComponents>
     </Container>
     <Container class="javax.swing.JPanel" name="menuPNL">
@@ -304,21 +276,21 @@
               <Group type="102" alignment="1" attributes="0">
                   <EmptySpace min="-2" pref="23" max="-2" attributes="0"/>
                   <Component id="octopusBTN" min="-2" pref="66" max="-2" attributes="0"/>
-                  <EmptySpace min="-2" pref="52" max="-2" attributes="0"/>
+                  <EmptySpace type="separate" max="-2" attributes="0"/>
                   <Component id="dolphinBTN" min="-2" pref="66" max="-2" attributes="0"/>
-                  <EmptySpace min="-2" pref="58" max="-2" attributes="0"/>
+                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
                   <Component id="turtleBTN" min="-2" pref="62" max="-2" attributes="0"/>
-                  <EmptySpace min="-2" pref="54" max="-2" attributes="0"/>
+                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
                   <Component id="sharkBTN" min="-2" pref="66" max="-2" attributes="0"/>
-                  <EmptySpace min="-2" pref="50" max="-2" attributes="0"/>
+                  <EmptySpace max="-2" attributes="0"/>
                   <Component id="rateBTN" min="-2" max="-2" attributes="0"/>
-                  <EmptySpace max="32767" attributes="0"/>
+                  <EmptySpace min="-2" pref="177" max="-2" attributes="0"/>
                   <Component id="sustainBTN" min="-2" max="-2" attributes="0"/>
                   <EmptySpace type="separate" max="-2" attributes="0"/>
                   <Component id="quizBTN" min="-2" pref="53" max="-2" attributes="0"/>
-                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
                   <Component id="homeBTN" min="-2" pref="50" max="-2" attributes="0"/>
-                  <EmptySpace min="-2" pref="15" max="-2" attributes="0"/>
+                  <EmptySpace max="32767" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
@@ -326,19 +298,15 @@
           <Group type="103" groupAlignment="0" attributes="0">
               <Group type="102" alignment="0" attributes="0">
                   <EmptySpace max="-2" attributes="0"/>
-                  <Group type="103" groupAlignment="1" attributes="0">
-                      <Group type="103" alignment="1" groupAlignment="3" attributes="0">
-                          <Component id="quizBTN" alignment="3" min="-2" pref="37" max="-2" attributes="0"/>
-                          <Component id="sustainBTN" alignment="3" min="-2" pref="37" max="-2" attributes="0"/>
-                      </Group>
-                      <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="turtleBTN" alignment="3" min="-2" pref="32" max="-2" attributes="0"/>
-                          <Component id="dolphinBTN" alignment="3" min="-2" pref="32" max="-2" attributes="0"/>
-                          <Component id="sharkBTN" alignment="3" min="-2" pref="32" max="-2" attributes="0"/>
-                          <Component id="octopusBTN" alignment="3" min="-2" pref="32" max="-2" attributes="0"/>
-                          <Component id="rateBTN" alignment="3" min="-2" pref="32" max="-2" attributes="0"/>
-                      </Group>
-                      <Component id="homeBTN" alignment="1" min="-2" pref="37" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="turtleBTN" alignment="3" min="-2" pref="32" max="-2" attributes="0"/>
+                      <Component id="dolphinBTN" alignment="3" min="-2" pref="32" max="-2" attributes="0"/>
+                      <Component id="sharkBTN" alignment="3" min="-2" pref="32" max="-2" attributes="0"/>
+                      <Component id="octopusBTN" alignment="3" min="-2" pref="32" max="-2" attributes="0"/>
+                      <Component id="rateBTN" alignment="3" min="-2" pref="32" max="-2" attributes="0"/>
+                      <Component id="sustainBTN" alignment="3" min="-2" pref="37" max="-2" attributes="0"/>
+                      <Component id="quizBTN" alignment="3" min="-2" pref="37" max="-2" attributes="0"/>
+                      <Component id="homeBTN" alignment="3" min="-2" pref="37" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace pref="18" max="32767" attributes="0"/>
               </Group>

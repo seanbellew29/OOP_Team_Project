@@ -49,11 +49,6 @@ public class SustainGUI extends javax.swing.JFrame {
         buttonGroup3 = new javax.swing.ButtonGroup();
         buttonGroup4 = new javax.swing.ButtonGroup();
         buttonGroup5 = new javax.swing.ButtonGroup();
-        navigationPanel = new javax.swing.JPanel();
-        infrographicGUI = new javax.swing.JButton();
-        exitBTN = new javax.swing.JButton();
-        quizBTN = new javax.swing.JButton();
-        homePageGUI = new javax.swing.JButton();
         pagePanel = new javax.swing.JPanel();
         question1LBL = new javax.swing.JLabel();
         question2LBL = new javax.swing.JLabel();
@@ -77,21 +72,25 @@ public class SustainGUI extends javax.swing.JFrame {
         tryAgainBTN = new javax.swing.JButton();
         displayBTN = new javax.swing.JButton();
         imgPanel = new javax.swing.JPanel();
-        imgLBL = new javax.swing.JLabel();
         q1 = new javax.swing.JLabel();
         q2 = new javax.swing.JLabel();
         q3 = new javax.swing.JLabel();
         q4 = new javax.swing.JLabel();
         q5 = new javax.swing.JLabel();
         subheadingPanel = new javax.swing.JPanel();
-        jLabel2 = new javax.swing.JLabel();
-        subheadingimgPanel = new javax.swing.JPanel();
-        jLabel1 = new javax.swing.JLabel();
+        navigationPanel = new javax.swing.JPanel();
+        infrographicGUI = new javax.swing.JButton();
+        exitBTN = new javax.swing.JButton();
+        quizBTN = new javax.swing.JButton();
+        homePageGUI = new javax.swing.JButton();
         nameLBL = new javax.swing.JLabel();
         nameTF = new javax.swing.JTextField();
         searchBTN = new javax.swing.JButton();
         deleteBTN = new javax.swing.JButton();
+        imgLBL = new javax.swing.JLabel();
         titleLBL = new javax.swing.JLabel();
+        subheadingimgPanel = new javax.swing.JPanel();
+        jLabel1 = new javax.swing.JLabel();
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -128,71 +127,6 @@ public class SustainGUI extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setBackground(new java.awt.Color(204, 255, 204));
-
-        navigationPanel.setBackground(new java.awt.Color(0, 0, 204));
-        navigationPanel.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-        infrographicGUI.setBackground(new java.awt.Color(204, 204, 204));
-        infrographicGUI.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        infrographicGUI.setText("Infographic");
-        infrographicGUI.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        infrographicGUI.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                infrographicGUIActionPerformed(evt);
-            }
-        });
-
-        exitBTN.setBackground(new java.awt.Color(204, 204, 204));
-        exitBTN.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        exitBTN.setText("Exit");
-        exitBTN.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        exitBTN.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                exitBTNActionPerformed(evt);
-            }
-        });
-
-        quizBTN.setBackground(new java.awt.Color(204, 204, 204));
-        quizBTN.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        quizBTN.setText("Quiz");
-        quizBTN.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-        homePageGUI.setBackground(new java.awt.Color(204, 204, 204));
-        homePageGUI.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        homePageGUI.setText("Homepage");
-        homePageGUI.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        homePageGUI.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                homePageGUIActionPerformed(evt);
-            }
-        });
-
-        javax.swing.GroupLayout navigationPanelLayout = new javax.swing.GroupLayout(navigationPanel);
-        navigationPanel.setLayout(navigationPanelLayout);
-        navigationPanelLayout.setHorizontalGroup(
-            navigationPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(navigationPanelLayout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(infrographicGUI)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(quizBTN, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(homePageGUI)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(exitBTN, javax.swing.GroupLayout.PREFERRED_SIZE, 79, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap())
-        );
-        navigationPanelLayout.setVerticalGroup(
-            navigationPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, navigationPanelLayout.createSequentialGroup()
-                .addContainerGap(19, Short.MAX_VALUE)
-                .addGroup(navigationPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(quizBTN)
-                    .addComponent(infrographicGUI, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(homePageGUI, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(exitBTN, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap())
-        );
 
         pagePanel.setBackground(new java.awt.Color(102, 204, 255));
 
@@ -294,23 +228,15 @@ public class SustainGUI extends javax.swing.JFrame {
         imgPanel.setBackground(new java.awt.Color(102, 204, 255));
         imgPanel.setForeground(new java.awt.Color(0, 153, 204));
 
-        imgLBL.setIcon(new javax.swing.ImageIcon(getClass().getResource("/seasaver/excellence.png"))); // NOI18N
-
         javax.swing.GroupLayout imgPanelLayout = new javax.swing.GroupLayout(imgPanel);
         imgPanel.setLayout(imgPanelLayout);
         imgPanelLayout.setHorizontalGroup(
             imgPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(imgPanelLayout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(imgLBL)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGap(0, 57, Short.MAX_VALUE)
         );
         imgPanelLayout.setVerticalGroup(
             imgPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, imgPanelLayout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(imgLBL, javax.swing.GroupLayout.DEFAULT_SIZE, 49, Short.MAX_VALUE)
-                .addContainerGap())
+            .addGap(0, 61, Short.MAX_VALUE)
         );
 
         q1.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
@@ -330,45 +256,84 @@ public class SustainGUI extends javax.swing.JFrame {
 
         subheadingPanel.setBackground(new java.awt.Color(204, 204, 204));
 
-        jLabel2.setFont(new java.awt.Font("Segoe UI", 3, 24)); // NOI18N
-        jLabel2.setText("SEE HOW YOUR CHOICES AFFECT LIFE BENEATH THE SEA");
-        jLabel2.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        navigationPanel.setBackground(new java.awt.Color(0, 0, 204));
+        navigationPanel.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        infrographicGUI.setBackground(new java.awt.Color(204, 204, 204));
+        infrographicGUI.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        infrographicGUI.setText("Infographic");
+        infrographicGUI.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        infrographicGUI.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                infrographicGUIActionPerformed(evt);
+            }
+        });
+
+        exitBTN.setBackground(new java.awt.Color(204, 204, 204));
+        exitBTN.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        exitBTN.setText("Exit");
+        exitBTN.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        exitBTN.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                exitBTNActionPerformed(evt);
+            }
+        });
+
+        quizBTN.setBackground(new java.awt.Color(204, 204, 204));
+        quizBTN.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        quizBTN.setText("Quiz");
+        quizBTN.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        homePageGUI.setBackground(new java.awt.Color(204, 204, 204));
+        homePageGUI.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        homePageGUI.setText("Homepage");
+        homePageGUI.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        homePageGUI.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                homePageGUIActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout navigationPanelLayout = new javax.swing.GroupLayout(navigationPanel);
+        navigationPanel.setLayout(navigationPanelLayout);
+        navigationPanelLayout.setHorizontalGroup(
+            navigationPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(navigationPanelLayout.createSequentialGroup()
+                .addContainerGap(263, Short.MAX_VALUE)
+                .addComponent(infrographicGUI, javax.swing.GroupLayout.PREFERRED_SIZE, 125, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(quizBTN, javax.swing.GroupLayout.PREFERRED_SIZE, 109, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(homePageGUI, javax.swing.GroupLayout.PREFERRED_SIZE, 119, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(exitBTN, javax.swing.GroupLayout.PREFERRED_SIZE, 113, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(16, 16, 16))
+        );
+        navigationPanelLayout.setVerticalGroup(
+            navigationPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(navigationPanelLayout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(navigationPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(exitBTN, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(homePageGUI)
+                    .addComponent(quizBTN)
+                    .addComponent(infrographicGUI))
+                .addContainerGap(29, Short.MAX_VALUE))
+        );
 
         javax.swing.GroupLayout subheadingPanelLayout = new javax.swing.GroupLayout(subheadingPanel);
         subheadingPanel.setLayout(subheadingPanelLayout);
         subheadingPanelLayout.setHorizontalGroup(
             subheadingPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(subheadingPanelLayout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jLabel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addContainerGap())
+                .addComponent(navigationPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
         );
         subheadingPanelLayout.setVerticalGroup(
             subheadingPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(subheadingPanelLayout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jLabel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addContainerGap())
-        );
-
-        subheadingimgPanel.setBackground(new java.awt.Color(204, 204, 204));
-
-        jLabel1.setBackground(new java.awt.Color(204, 204, 204));
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/seasaver/speedometer.png"))); // NOI18N
-        jLabel1.setText("jLabel1");
-
-        javax.swing.GroupLayout subheadingimgPanelLayout = new javax.swing.GroupLayout(subheadingimgPanel);
-        subheadingimgPanel.setLayout(subheadingimgPanelLayout);
-        subheadingimgPanelLayout.setHorizontalGroup(
-            subheadingimgPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(subheadingimgPanelLayout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 63, Short.MAX_VALUE)
-                .addContainerGap())
-        );
-        subheadingimgPanelLayout.setVerticalGroup(
-            subheadingimgPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jLabel1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, subheadingPanelLayout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addComponent(navigationPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
 
         nameLBL.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
@@ -395,6 +360,8 @@ public class SustainGUI extends javax.swing.JFrame {
                 deleteBTNActionPerformed(evt);
             }
         });
+
+        imgLBL.setIcon(new javax.swing.ImageIcon(getClass().getResource("/seasaver/excellence.png"))); // NOI18N
 
         javax.swing.GroupLayout pagePanelLayout = new javax.swing.GroupLayout(pagePanel);
         pagePanel.setLayout(pagePanelLayout);
@@ -428,76 +395,76 @@ public class SustainGUI extends javax.swing.JFrame {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)))
                 .addGroup(pagePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addGroup(pagePanelLayout.createSequentialGroup()
-                        .addGroup(pagePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(q1NO)
-                            .addComponent(q2YES)
-                            .addComponent(q2NO)
-                            .addComponent(q3YES)
-                            .addComponent(q3NO))
+                        .addGroup(pagePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addGroup(pagePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                .addComponent(q2YES)
+                                .addComponent(q2NO)
+                                .addComponent(q3YES)
+                                .addComponent(q3NO)
+                                .addComponent(q5YES))
+                            .addGroup(pagePanelLayout.createSequentialGroup()
+                                .addGroup(pagePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                    .addComponent(q1NO)
+                                    .addComponent(q1YES))
+                                .addGap(2, 2, 2))
+                            .addComponent(q5NO))
                         .addGap(148, 148, 148))
                     .addGroup(pagePanelLayout.createSequentialGroup()
                         .addGroup(pagePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(q5NO)
-                            .addComponent(q5YES)
                             .addComponent(q4YES)
                             .addComponent(q4NO))
-                        .addGap(150, 150, 150))
-                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, pagePanelLayout.createSequentialGroup()
-                        .addGroup(pagePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(q1YES, javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(subheadingimgPanel, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addContainerGap())))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, pagePanelLayout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(submitBTN, javax.swing.GroupLayout.PREFERRED_SIZE, 144, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(294, 294, 294))
+                        .addGap(150, 150, 150))))
             .addGroup(pagePanelLayout.createSequentialGroup()
-                .addGroup(pagePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(pagePanelLayout.createSequentialGroup()
-                        .addGap(90, 90, 90)
-                        .addComponent(nameLBL)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(nameTF, javax.swing.GroupLayout.PREFERRED_SIZE, 174, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(pagePanelLayout.createSequentialGroup()
-                        .addGap(297, 297, 297)
-                        .addComponent(tryAgainBTN)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(displayBTN)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(searchBTN)
-                        .addGap(12, 12, 12)
-                        .addComponent(deleteBTN)))
-                .addContainerGap(103, Short.MAX_VALUE))
+                .addGap(90, 90, 90)
+                .addComponent(nameLBL)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(nameTF, javax.swing.GroupLayout.PREFERRED_SIZE, 174, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, pagePanelLayout.createSequentialGroup()
                 .addGap(0, 0, Short.MAX_VALUE)
-                .addComponent(scoreLBL)
-                .addGap(0, 0, 0)
-                .addComponent(answerBox, javax.swing.GroupLayout.PREFERRED_SIZE, 380, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addComponent(imgPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(130, 130, 130))
+                .addGroup(pagePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, pagePanelLayout.createSequentialGroup()
+                        .addGroup(pagePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addGroup(pagePanelLayout.createSequentialGroup()
+                                .addComponent(tryAgainBTN)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(displayBTN)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(searchBTN)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(deleteBTN))
+                            .addGroup(pagePanelLayout.createSequentialGroup()
+                                .addComponent(scoreLBL)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(answerBox, javax.swing.GroupLayout.PREFERRED_SIZE, 380, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(pagePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(imgPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(imgLBL))
+                        .addGap(130, 130, 130))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, pagePanelLayout.createSequentialGroup()
+                        .addComponent(submitBTN, javax.swing.GroupLayout.PREFERRED_SIZE, 144, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(271, 271, 271))))
         );
         pagePanelLayout.setVerticalGroup(
             pagePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(pagePanelLayout.createSequentialGroup()
                 .addGap(12, 12, 12)
-                .addGroup(pagePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(subheadingPanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(subheadingimgPanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addComponent(subheadingPanel, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(pagePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(nameLBL)
                     .addComponent(nameTF, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(q1YES)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(pagePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(q1)
                     .addGroup(pagePanelLayout.createSequentialGroup()
-                        .addGroup(pagePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(q1NO)
-                            .addComponent(question1LBL))
-                        .addGap(18, 18, 18)
+                        .addGroup(pagePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(question1LBL)
+                            .addComponent(q1NO))
+                        .addGap(19, 19, 19)
                         .addComponent(q2YES)))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(pagePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
@@ -513,6 +480,20 @@ public class SustainGUI extends javax.swing.JFrame {
                     .addComponent(q3))
                 .addGroup(pagePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addGroup(pagePanelLayout.createSequentialGroup()
+                        .addGap(10, 10, 10)
+                        .addComponent(q5YES)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(q5NO, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addGap(18, 18, 18)
+                        .addComponent(q4YES)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(q4NO)
+                        .addGap(70, 70, 70)
+                        .addComponent(imgLBL, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(imgPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addGroup(pagePanelLayout.createSequentialGroup()
                         .addGap(35, 35, 35)
                         .addGroup(pagePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(question4LBL)
@@ -521,55 +502,61 @@ public class SustainGUI extends javax.swing.JFrame {
                         .addGroup(pagePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(q5)
                             .addComponent(question5LBL))
-                        .addGap(58, 58, 58)
-                        .addComponent(submitBTN))
-                    .addGroup(pagePanelLayout.createSequentialGroup()
-                        .addGap(22, 22, 22)
-                        .addComponent(q5YES)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(q5NO, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addGap(26, 26, 26)
-                        .addComponent(q4YES)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(q4NO)
-                        .addGap(76, 76, 76)))
-                .addGroup(pagePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(pagePanelLayout.createSequentialGroup()
-                        .addGap(43, 43, 43)
-                        .addComponent(scoreLBL))
-                    .addGroup(pagePanelLayout.createSequentialGroup()
-                        .addGap(29, 29, 29)
+                        .addGap(21, 21, 21)
+                        .addComponent(submitBTN)
                         .addGroup(pagePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(imgPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(answerBox, javax.swing.GroupLayout.PREFERRED_SIZE, 61, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(pagePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(deleteBTN)
-                    .addGroup(pagePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(displayBTN)
-                        .addComponent(tryAgainBTN)
-                        .addComponent(searchBTN)))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                            .addGroup(pagePanelLayout.createSequentialGroup()
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(answerBox, javax.swing.GroupLayout.PREFERRED_SIZE, 61, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(pagePanelLayout.createSequentialGroup()
+                                .addGap(18, 18, 18)
+                                .addComponent(scoreLBL)))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addGroup(pagePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(tryAgainBTN)
+                            .addComponent(displayBTN)
+                            .addComponent(searchBTN)
+                            .addComponent(deleteBTN))
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
         );
 
-        titleLBL.setBackground(new java.awt.Color(204, 204, 204));
-        titleLBL.setFont(new java.awt.Font("Magneto", 1, 48)); // NOI18N
+        titleLBL.setBackground(new java.awt.Color(153, 153, 153));
+        titleLBL.setFont(new java.awt.Font("Stencil", 1, 48)); // NOI18N
         titleLBL.setForeground(new java.awt.Color(0, 51, 153));
         titleLBL.setText("   Sustainability score");
+
+        subheadingimgPanel.setBackground(new java.awt.Color(204, 204, 204));
+
+        jLabel1.setBackground(new java.awt.Color(204, 204, 204));
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/seasaver/speedometer.png"))); // NOI18N
+        jLabel1.setText("jLabel1");
+
+        javax.swing.GroupLayout subheadingimgPanelLayout = new javax.swing.GroupLayout(subheadingimgPanel);
+        subheadingimgPanel.setLayout(subheadingimgPanelLayout);
+        subheadingimgPanelLayout.setHorizontalGroup(
+            subheadingimgPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(subheadingimgPanelLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 63, Short.MAX_VALUE)
+                .addContainerGap())
+        );
+        subheadingimgPanelLayout.setVerticalGroup(
+            subheadingimgPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+        );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(titleLBL)
-                .addGap(18, 18, 18)
-                .addComponent(navigationPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(48, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(pagePanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(pagePanel, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
+                    .addGroup(layout.createSequentialGroup()
+                        .addContainerGap(132, Short.MAX_VALUE)
+                        .addComponent(titleLBL)
+                        .addGap(44, 44, 44)
+                        .addComponent(subheadingimgPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap())
         );
         layout.setVerticalGroup(
@@ -577,11 +564,10 @@ public class SustainGUI extends javax.swing.JFrame {
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addGap(43, 43, 43)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(navigationPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(titleLBL, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addComponent(titleLBL, javax.swing.GroupLayout.DEFAULT_SIZE, 60, Short.MAX_VALUE)
+                    .addComponent(subheadingimgPanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(pagePanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addContainerGap())
+                .addComponent(pagePanel, javax.swing.GroupLayout.PREFERRED_SIZE, 580, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
 
         pack();
@@ -825,7 +811,6 @@ public class SustainGUI extends javax.swing.JFrame {
     private javax.swing.JPanel imgPanel;
     private javax.swing.JButton infrographicGUI;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;

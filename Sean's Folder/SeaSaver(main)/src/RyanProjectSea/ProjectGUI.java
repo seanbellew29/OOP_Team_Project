@@ -52,7 +52,6 @@ public class ProjectGUI extends javax.swing.JFrame {
         jScrollPane2 = new javax.swing.JScrollPane();
         donateTA = new javax.swing.JTextArea();
         donateBTN = new javax.swing.JButton();
-        ratePNL = new javax.swing.JPanel();
         menuPNL = new javax.swing.JPanel();
         sharkBTN = new javax.swing.JButton();
         turtleBTN = new javax.swing.JButton();
@@ -73,17 +72,17 @@ public class ProjectGUI extends javax.swing.JFrame {
         titleLBL.setBackground(new java.awt.Color(255, 255, 255));
         titleLBL.setFont(new java.awt.Font("Stencil", 0, 48)); // NOI18N
         titleLBL.setForeground(new java.awt.Color(0, 0, 204));
-        titleLBL.setText("Sea life INfograpgic");
+        titleLBL.setText("Sea life INfographic");
         titleLBL.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
 
         javax.swing.GroupLayout titlePNLLayout = new javax.swing.GroupLayout(titlePNL);
         titlePNL.setLayout(titlePNLLayout);
         titlePNLLayout.setHorizontalGroup(
             titlePNLLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(titlePNLLayout.createSequentialGroup()
-                .addGap(443, 443, 443)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, titlePNLLayout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(titleLBL)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGap(232, 232, 232))
         );
         titlePNLLayout.setVerticalGroup(
             titlePNLLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -100,7 +99,7 @@ public class ProjectGUI extends javax.swing.JFrame {
         infoTA.setColumns(20);
         infoTA.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         infoTA.setRows(5);
-        infoTA.setText("( Why Healthy Oceans Matter? )\nA healthy ocean matters becasue it Produce 50% of Earth’s oxygen, Regulate global climate,Support billions of people with food + jobs\nHome to over 200,000 known marine species (and countless undiscovered ones).\n\n\n( The Dark Side of Mass Fishing )\n1. Overfishing -- Fish populations can’t reproduce fast enough to recover and Some species (like bluefin tuna) have dropped by over 90% in certain regions.\n2. Bycatch -- Dolphins, turtles, sharks, seabirds get caught in nets meant for other fish it is estimated that there is 38 million tonnes of bycatch annually.\n3. Habitat Destruction -- Bottom trawling scrapes the seafloor, destroying coral and sponge forests this disrupts entire marine ecosystems.\n\n\n( Plastic Pollution: A Slow-Motion Crisis )\n1. The Plastic Numbers -- 11 million tonnes of plastic enter the ocean every year, Only 9% of global plastic is recycled.\n2. Microplastics -- Plastics break down into fragments smaller than 5mm these microplasticsare found in fish, sea salt, drinking water and human blood.\n3. Wildlife Harm -- Sea turtles mistake plastic bags for jellyfish, Seabirds ingest brightly colored plastic pieces, Entanglement kills seals, dolphins, whales, and more.\n                                 if you would like to see more about wildlife harm you can click on the seacretures name above the infographic.\n4. Ocean Garbage Patches -- The Great Pacific Garbage Patch = 1.6 million km2, Not an island more like a massive soup of microplastics and debris.\n\n\n( So What We Can Do ? )\n- Eat lower on the food chain (more plant-based meals → reduces pressure on fisheries).\n- Properly dispose of fishing gear to reduce “ghost nets” in oceans.\n- Choose biodegradable or compostable alternatives when possible.\n- Spread awareness through social media or local groups.\n-  Avoid products made with microbeads (found in some exfoliators & toothpastes).\n-  Support marine-protected areas (MPAs) that allow ecosystems to recover.\n- And you can donate to our team to help clean up beaches all over the world if your interested click on the donation page button and it will bring you to our teams donation page.\n\n\n\n\n\n\n\n\n\n");
+        infoTA.setText("( Why Healthy Oceans Matter? )\nA healthy ocean matters becasue it Produce 50% of Earth’s oxygen, Regulate global\n climate,Support billions of people with food + jobs\nHome to over 200,000 known marine species (and countless undiscovered ones).\n\n\n( The Dark Side of Mass Fishing )\n1. Overfishing -- Fish populations can’t reproduce fast enough to recover and \nSome species (like bluefin tuna) have dropped by over 90% in certain regions.\n2. Bycatch -- Dolphins, turtles, sharks, seabirds get caught in nets meant for other \nfish it is estimated that there is 38 million tonnes of bycatch annually.\n3. Habitat Destruction -- Bottom trawling scrapes the seafloor, destroying coral and \nsponge forests this disrupts entire marine ecosystems.\n\n\n( Plastic Pollution: A Slow-Motion Crisis )\n1. The Plastic Numbers -- 11 million tonnes of plastic enter the ocean every year,\n Only 9% of global plastic is recycled.\n2. Microplastics -- Plastics break down into fragments smaller than 5mm these \nmicroplasticsare found in fish, sea salt, drinking water and human blood.\n3. Wildlife Harm -- Sea turtles mistake plastic bags for jellyfish, Seabirds ingest brightly \ncolored plastic pieces, Entanglement kills seals, dolphins, whales, and more.\n                                 if you would like to see more about wildlife harm you can click \non the seacretures name above the infographic.\n4. Ocean Garbage Patches -- The Great Pacific Garbage Patch = 1.6 million km2,\n Not an island more like a massive soup of microplastics and debris.\n\n\n( So What We Can Do ? )\n- Eat lower on the food chain (more plant-based meals → reduces pressure on fisheries).\n- Properly dispose of fishing gear to reduce “ghost nets” in oceans.\n- Choose biodegradable or compostable alternatives when possible.\n- Spread awareness through social media or local groups.\n-  Avoid products made with microbeads (found in some exfoliators & toothpastes).\n-  Support marine-protected areas (MPAs) that allow ecosystems to recover.\n- And you can donate to our team to help clean up beaches all over the world if\n your interested click on the donation page button and it will bring you to our \nteams donation page.\n\n\n\n\n\n\n\n\n\n");
         jScrollPane1.setViewportView(infoTA);
 
         donateTA.setBackground(new java.awt.Color(204, 204, 204));
@@ -125,61 +124,46 @@ public class ProjectGUI extends javax.swing.JFrame {
         bodyPNLLayout.setHorizontalGroup(
             bodyPNLLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(bodyPNLLayout.createSequentialGroup()
-                .addGap(30, 30, 30)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 1006, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(16, Short.MAX_VALUE)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 529, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGroup(bodyPNLLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(bodyPNLLayout.createSequentialGroup()
-                        .addGap(39, 39, 39)
-                        .addComponent(jScrollPane2, javax.swing.GroupLayout.DEFAULT_SIZE, 297, Short.MAX_VALUE)
-                        .addContainerGap())
+                        .addGap(132, 132, 132)
+                        .addComponent(donateBTN))
                     .addGroup(bodyPNLLayout.createSequentialGroup()
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(donateBTN)
-                        .addGap(103, 103, 103))))
+                        .addGap(28, 28, 28)
+                        .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 296, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGap(43, 43, 43))
         );
         bodyPNLLayout.setVerticalGroup(
             bodyPNLLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(bodyPNLLayout.createSequentialGroup()
                 .addContainerGap()
-                .addGroup(bodyPNLLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                .addGroup(bodyPNLLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(bodyPNLLayout.createSequentialGroup()
+                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 398, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                     .addGroup(bodyPNLLayout.createSequentialGroup()
                         .addComponent(donateBTN, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(18, 18, 18)
-                        .addComponent(jScrollPane2))
-                    .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 486, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(18, Short.MAX_VALUE))
-        );
-
-        ratePNL.setBackground(new java.awt.Color(0, 51, 204));
-
-        javax.swing.GroupLayout ratePNLLayout = new javax.swing.GroupLayout(ratePNL);
-        ratePNL.setLayout(ratePNLLayout);
-        ratePNLLayout.setHorizontalGroup(
-            ratePNLLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 1384, Short.MAX_VALUE)
-        );
-        ratePNLLayout.setVerticalGroup(
-            ratePNLLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 100, Short.MAX_VALUE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jScrollPane2)
+                        .addGap(16, 16, 16))))
         );
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
         jPanel2Layout.setHorizontalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel2Layout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(bodyPNL, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(ratePNL, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addContainerGap())
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(bodyPNL, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(203, 203, 203))
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel2Layout.createSequentialGroup()
                 .addComponent(bodyPNL, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(ratePNL, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         menuPNL.setBackground(new java.awt.Color(0, 0, 204));
@@ -272,36 +256,34 @@ public class ProjectGUI extends javax.swing.JFrame {
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, menuPNLLayout.createSequentialGroup()
                 .addGap(23, 23, 23)
                 .addComponent(octopusBTN, javax.swing.GroupLayout.PREFERRED_SIZE, 66, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(52, 52, 52)
+                .addGap(18, 18, 18)
                 .addComponent(dolphinBTN, javax.swing.GroupLayout.PREFERRED_SIZE, 66, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(58, 58, 58)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(turtleBTN, javax.swing.GroupLayout.PREFERRED_SIZE, 62, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(54, 54, 54)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(sharkBTN, javax.swing.GroupLayout.PREFERRED_SIZE, 66, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(50, 50, 50)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(rateBTN)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGap(177, 177, 177)
                 .addComponent(sustainBTN)
                 .addGap(18, 18, 18)
                 .addComponent(quizBTN, javax.swing.GroupLayout.PREFERRED_SIZE, 53, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(homeBTN, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(15, 15, 15))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         menuPNLLayout.setVerticalGroup(
             menuPNLLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(menuPNLLayout.createSequentialGroup()
                 .addContainerGap()
-                .addGroup(menuPNLLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addGroup(menuPNLLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(quizBTN, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(sustainBTN, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(menuPNLLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(turtleBTN, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(dolphinBTN, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(sharkBTN, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(octopusBTN, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(rateBTN, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGroup(menuPNLLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(turtleBTN, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(dolphinBTN, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(sharkBTN, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(octopusBTN, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(rateBTN, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(sustainBTN, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(quizBTN, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(homeBTN, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(18, Short.MAX_VALUE))
         );
@@ -311,27 +293,22 @@ public class ProjectGUI extends javax.swing.JFrame {
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, 926, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                         .addComponent(titlePNL, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addContainerGap())
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addGap(0, 0, Short.MAX_VALUE)
-                        .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(20, 20, 20))
-                    .addComponent(menuPNL, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                        .addComponent(menuPNL, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(titlePNL, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(menuPNL, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addContainerGap())
+                .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
 
         pack();
@@ -470,7 +447,6 @@ public class ProjectGUI extends javax.swing.JFrame {
     private javax.swing.JButton octopusBTN;
     private javax.swing.JButton quizBTN;
     private javax.swing.JButton rateBTN;
-    private javax.swing.JPanel ratePNL;
     private javax.swing.JButton sharkBTN;
     private javax.swing.JButton sustainBTN;
     private javax.swing.JLabel titleLBL;
