@@ -159,7 +159,7 @@ public class LoginPageGUI extends javax.swing.JFrame {
         LoginPage user = new LoginPage(username, password); //creates a new object called user and passes the info into it 
         user.confirm(); //the method
         
-         this.dispose(); //log in page disappears after the homepage is displayed
+         
         
     }//GEN-LAST:event_loginBTNActionPerformed
 
